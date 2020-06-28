@@ -17,7 +17,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -p 8001",
-    "format": "prettier --write **/*.{js,jsx}",
+    "format": "prettier --write \"**/*.{js,jsx}\"",
     "start": "npm run develop"
   },
   "dependencies": {
