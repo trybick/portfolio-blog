@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 import Header from './Header';
 import Footer from './Footer';
-import './layout.css';
+import '../style/layout.css';
 
 const Content = styled.div`
   margin: 0 auto;

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import './layout.css';
 
 const FooterContainer = styled.footer`
   display: flex;
