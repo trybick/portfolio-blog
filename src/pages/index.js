@@ -1,5 +1,5 @@
 import React from 'react';
-import LandingBio from '../components/LandingBio';
+import LandingBio from '../components/Landing';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
