@@ -38,7 +38,12 @@ const Footer = () => (
       <GitHubLink href="https://github.com/trybick">GitHub</GitHubLink>
     </FooterRow>
 
-    <FooterRow>👨‍🚀 Boston, MA {new Date().getFullYear()}</FooterRow>
+    <FooterRow>
+      <span role="img" aria-label="astronaut">
+        👨‍🚀
+      </span>{' '}
+      Boston, MA {new Date().getFullYear()}
+    </FooterRow>
   </footer>
 );
 
