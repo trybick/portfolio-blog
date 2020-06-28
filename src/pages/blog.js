@@ -16,15 +16,18 @@ const ArticleDate = styled.h5`
   color: #606060;
 `;
 
-const MarkerHeader = styled.h3`
+const MarkerHeader = styled.h2`
   display: inline;
-  border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
-  );
+  background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
+  background-size: 100% 0.2em;
+  background-repeat: no-repeat;
+  background-position: 0px 88%;
+  font-size: 1.8rem;
+  transition: background-size 0.25s ease-in 0s;
+
+  :hover {
+    background-size: 100% 88%;
+  }
 `;
 
 const ReadingTime = styled.h5`
