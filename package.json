@@ -1,9 +1,25 @@
 {
-  "name": "gatsby-starter-julia",
+  "name": "trybick-portfolio",
   "private": true,
-  "description": "A minimal blog template built with Gatsby",
+  "description": "Portfolio and blog",
   "version": "0.1.0",
-  "author": "Niklas Metje <hi@niklasmtj.de>",
+  "author": "Tim Rybicki",
+  "keywords": [
+    "gatsby",
+    "portoflio",
+    "blog"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop -p 8001",
+    "format": "prettier --write **/*.{js,jsx}",
+    "start": "npm run develop"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
@@ -30,24 +46,5 @@
   },
   "devDependencies": {
     "prettier": "^2.0.5"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
