@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
 import React from 'react';
 
 const Content = styled.div`
@@ -72,7 +71,7 @@ const SiteHeader = styled.header`
   justify-content: center;
 `;
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <SiteHeader>
     <Content>
       <p>
@@ -83,13 +82,5 @@ const Header = ({ siteTitle }) => (
     </Content>
   </SiteHeader>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
-};
 
 export default Header;
