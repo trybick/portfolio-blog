@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import gatsbyLogo from '../images/gatsby-icon.png';
 
-const FooterContainer = styled.footer`
+const FooterRow = styled.div`
   display: flex;
   justify-content: center;
 `;
@@ -33,16 +32,14 @@ const GitHubLink = styled.a`
   }
 `;
 
-const GatsbyLink = styled.a`
-  margin-left: 5px;
-`;
-
 const Footer = () => (
-  <>
-    <FooterContainer>
-      <GitHubLink href="https://github.com/niklasmtj/gatsby-starter-julia">GitHub</GitHubLink>
-    </FooterContainer>
-  </>
+  <footer>
+    <FooterRow>
+      <GitHubLink href="https://github.com/trybick">GitHub</GitHubLink>
+    </FooterRow>
+
+    <FooterRow>👨‍🚀 Boston, MA {new Date().getFullYear()}</FooterRow>
+  </footer>
 );
 
 export default Footer;
