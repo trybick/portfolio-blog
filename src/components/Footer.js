@@ -36,6 +36,10 @@ const GitHubLink = styled.a`
   }
 `;
 
+const Emoji = styled.span`
+  margin-right: 5px;
+`;
+
 const Footer = () => (
   <FooterContainer>
     <FooterRow>
@@ -43,9 +47,9 @@ const Footer = () => (
     </FooterRow>
 
     <FooterRow>
-      <span role="img" aria-label="astronaut">
+      <Emoji role="img" aria-label="astronaut">
         👨‍🚀
-      </span>
+      </Emoji>
       Boston, MA {new Date().getFullYear()}
     </FooterRow>
   </FooterContainer>
