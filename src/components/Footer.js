@@ -10,6 +10,10 @@ const FooterRow = styled.div`
   justify-content: center;
 `;
 
+const TopRow = styled(FooterRow)`
+  margin-bottom: 20px;
+`;
+
 const GitHubLink = styled.a`
   color: black;
   margin-left: 15px;
@@ -42,9 +46,9 @@ const CityContainer = styled.span`
 
 const Footer = () => (
   <FooterContainer>
-    <FooterRow>
+    <TopRow>
       <GitHubLink href="https://github.com/trybick">GitHub</GitHubLink>
-    </FooterRow>
+    </TopRow>
 
     <FooterRow>
       <span role="img" aria-label="astronaut">
