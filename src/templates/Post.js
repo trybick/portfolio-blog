@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
 const Content = styled.div`

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
 const Content = styled.div`
