@@ -17,9 +17,9 @@ const ArticleDate = styled.h5`
 `;
 
 const MarkerHeader = styled.h2`
-  display: inline;
   background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
-  background-size: 100% 0.2em;
+  // To enable yellow underlines on /blog page headers, change size eo 0.2em
+  background-size: 100% 0em;
   background-repeat: no-repeat;
   background-position: 0px 88%;
   font-size: 1.8rem;

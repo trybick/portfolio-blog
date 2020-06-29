@@ -12,13 +12,12 @@ const Content = styled.div`
 
 const MarkedHeader = styled.h1`
   display: inline;
-  border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
-  );
+  background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
+  background-size: 100% 0.4em;
+  background-repeat: no-repeat;
+  background-position: 0px 88%;
+  transition: background-size 0.25s ease-in 0s;
+  line-height: 50px;
 `;
 
 const HeaderDate = styled.h3`
@@ -26,7 +25,7 @@ const HeaderDate = styled.h3`
   color: #606060;
 `;
 
-// STYLE THE TAGS INSIDE THE MARKDOWN HERE
+// Here is where we can style tags contained inside the markdown file
 const MarkdownContent = styled.div`
   a {
     text-decoration: none;
