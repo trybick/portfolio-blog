@@ -11,10 +11,10 @@ const FooterRow = styled.div`
 `;
 
 const TopRow = styled(FooterRow)`
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 `;
 
-const GitHubLink = styled.a`
+const ContactLink = styled.a`
   color: black;
   margin-left: 15px;
   text-decoration: none;
@@ -47,12 +47,14 @@ const CityContainer = styled.span`
 const Footer = () => (
   <FooterContainer>
     <TopRow>
-      <GitHubLink href="https://github.com/trybick">GitHub</GitHubLink>
+      <ContactLink href="https://github.com/trybick">GitHub</ContactLink>
+      <ContactLink href="https://www.linkedin.com/in/tim-rybicki/">LinkedIn</ContactLink>
+      <ContactLink href="https://www.youtube.com/celtic426">YouTube</ContactLink>
     </TopRow>
 
     <FooterRow>
       <span role="img" aria-label="astronaut">
-        👨‍🚀
+        ☀️
       </span>
       <CityContainer>Boston, MA {new Date().getFullYear()}</CityContainer>
     </FooterRow>
