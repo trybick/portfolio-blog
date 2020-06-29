@@ -36,8 +36,8 @@ const GitHubLink = styled.a`
   }
 `;
 
-const Emoji = styled.span`
-  margin-right: 5px;
+const CityContainer = styled.span`
+  margin-left: 5px;
 `;
 
 const Footer = () => (
@@ -47,10 +47,10 @@ const Footer = () => (
     </FooterRow>
 
     <FooterRow>
-      <Emoji role="img" aria-label="astronaut">
+      <span role="img" aria-label="astronaut">
         👨‍🚀
-      </Emoji>
-      Boston, MA {new Date().getFullYear()}
+      </span>
+      <CityContainer>Boston, MA {new Date().getFullYear()}</CityContainer>
     </FooterRow>
   </FooterContainer>
 );
