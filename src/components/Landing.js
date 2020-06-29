@@ -16,9 +16,9 @@ const OuterContainer = styled.div`
 `;
 
 const Description = styled.p`
-  padding: 0;
-  margin-bottom: 1rem;
   font-size: 1.4rem;
+  max-width: 250px;
+  margin: 8px auto;
 `;
 
 const NameHeader = styled.h1`
