@@ -50,6 +50,7 @@ const Header = () => (
     <Content>
       <p>
         <HomeLink to="/">Home</HomeLink>
+        <NavLink to="/about">About</NavLink>
         <NavLink to="/blog">Blog</NavLink>
       </p>
     </Content>

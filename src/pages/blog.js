@@ -35,7 +35,7 @@ const ReadingTime = styled.h5`
   color: #606060;
 `;
 
-const IndexPage = ({ data }) => {
+const BlogPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
@@ -70,7 +70,7 @@ const IndexPage = ({ data }) => {
   );
 };
 
-export default IndexPage;
+export default BlogPage;
 
 export const query = graphql`
   query {
