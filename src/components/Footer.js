@@ -11,7 +11,7 @@ const FooterRow = styled.div`
 `;
 
 const TopRow = styled(FooterRow)`
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 `;
 
 const GitHubLink = styled.a`
