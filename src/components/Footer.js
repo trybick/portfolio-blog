@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
+const FooterContainer = styled.footer`
+  padding-bottom: 30px;
+`;
+
 const FooterRow = styled.div`
   display: flex;
   justify-content: center;
@@ -33,7 +37,7 @@ const GitHubLink = styled.a`
 `;
 
 const Footer = () => (
-  <footer>
+  <FooterContainer>
     <FooterRow>
       <GitHubLink href="https://github.com/trybick">GitHub</GitHubLink>
     </FooterRow>
@@ -41,10 +45,10 @@ const Footer = () => (
     <FooterRow>
       <span role="img" aria-label="astronaut">
         👨‍🚀
-      </span>{' '}
+      </span>
       Boston, MA {new Date().getFullYear()}
     </FooterRow>
-  </footer>
+  </FooterContainer>
 );
 
 export default Footer;
