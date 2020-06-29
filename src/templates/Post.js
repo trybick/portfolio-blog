@@ -13,7 +13,7 @@ const Content = styled.div`
 const MarkedHeader = styled.h1`
   display: inline;
   background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
-  background-size: 100% 0.4em;
+  background-size: 100% 0.2em;
   background-repeat: no-repeat;
   background-position: 0px 88%;
   transition: background-size 0.25s ease-in 0s;
