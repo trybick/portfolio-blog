@@ -24,6 +24,8 @@ const Title = styled.h4`
 `;
 
 const Icons = styled.div`
+  display: flex;
+
   svg {
     margin-left: 8px;
   }
