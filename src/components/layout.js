@@ -1,6 +1,6 @@
 import React from 'react';
 import { css, Global } from '@emotion/core';
-import { ThemeProvider, CSSReset } from '@chakra-ui/core';
+import { ThemeProvider } from '@chakra-ui/core';
 import styled from '@emotion/styled';
 import Header from './Header';
 import Footer from './Footer';
