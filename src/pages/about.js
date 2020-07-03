@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Button } from "@chakra-ui/core";
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
@@ -15,6 +16,7 @@ const AboutPage = () => {
       <SEO title="About" />
       <Content>
         <h1>About</h1>
+        <Button />
         <p>
           Hey there, I'm Tim and I'm a software developer specializing in React.js and JavaScript. I
           enjoy finding fast and simple ways of doing things. My other passions are playing music,
