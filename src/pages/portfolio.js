@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ProjectCard from '../components/ProjectCard';
-import { projectsConfig } from '../config/projectsConfig';
+import projectsConfig from '../config/projects';
 
 const Content = styled.div`
   margin: 0 auto;

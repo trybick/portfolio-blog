@@ -1,4 +1,4 @@
-export const projectsConfig = [
+export default [
   {
     name: 'Tray Tuner',
     platform: 'Desktop',
