@@ -44,6 +44,10 @@ const MarkdownContent = styled.div`
       background-position: 0px 98%;
     }
   }
+
+  h2 {
+    margin-top: 25px;
+  }
 `;
 
 const Post = ({ data: { markdownRemark: post } }) => (

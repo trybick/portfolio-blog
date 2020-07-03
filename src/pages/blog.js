@@ -11,12 +11,16 @@ const Content = styled.div`
   padding: 1.45rem 1.0875rem;
 `;
 
+const PageTitle = styled.h1`
+  margin-bottom: 40px;
+`;
+
 const CreatedDate = styled.h5`
   display: inline;
   color: #606060;
 `;
 
-const Title = styled.h2`
+const PostTitle = styled.h2`
   background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
   background-size: 100% 0em;
   background-repeat: no-repeat;
@@ -28,6 +32,10 @@ const Title = styled.h2`
   :hover {
     background-size: 100% 88%;
   }
+`;
+
+const MidHeader = styled.div`
+  margin: 4px 0;
 `;
 
 const ReadingTime = styled.h5`
@@ -50,11 +58,11 @@ const BlogPage = ({ data }) => {
             color: inherit;
           `}
         >
-          <Title>{node.frontmatter.title}</Title>
-          <div>
+          <PostTitle>{node.frontmatter.title}</PostTitle>
+          <MidHeader>
             <CreatedDate>{node.frontmatter.date}</CreatedDate>
             <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
-          </div>
+          </MidHeader>
           <p>{node.excerpt}</p>
         </Link>
       </div>
@@ -64,7 +72,7 @@ const BlogPage = ({ data }) => {
     <Layout>
       <SEO title="Blog" />
       <Content>
-        <h1>Blog</h1>
+        <PageTitle>Blog</PageTitle>
         {parsedMarkdown}
       </Content>
     </Layout>

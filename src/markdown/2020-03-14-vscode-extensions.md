@@ -1,5 +1,5 @@
 ---
-title: 'VSCode Extensions for JavaScript Developers'
+title: 'Favorite VSCode Extensions'
 date: '2020-03-14'
 draft: false
 path: '/blog/favorite-vscode-extensions'
@@ -62,7 +62,7 @@ VSCode is the most popular code editor currently, thanks in part to its Marketpl
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - Sync your settings, keyboard shortcuts, extensions and more to your GitHub account. Next time you setup a new computer, this is the only thing you have to worry about.
 
 - [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - Moves the sidebar (usually on the left) to the bottom status bar (see picture). More space!
-<img src="https://i.imgur.com/KUU4IN6.png" alt="Activitus Bar example" style="padding-left: 20px; padding-bottom: -10px"/>
+  <img src="https://i.imgur.com/KUU4IN6.png" alt="Activitus Bar example" style="padding-left: 20px; padding-bottom: -10px"/>
 
 - [Wrap Console Log](https://marketplace.visualstudio.com/items?itemName=midnightsyntax.vscode-wrap-console-log) - Insert console log statements for highlighted text using a keyboard shortcut. You may want to add a keyboard shortcut like this:
 
