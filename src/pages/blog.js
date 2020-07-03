@@ -23,7 +23,7 @@ const Title = styled.h2`
   background-position: 0px 88%;
   font-size: 1.8rem;
   transition: background-size 0.25s ease-in 0s;
-  margin-bottom: 1px;
+  margin: 0;
 
   :hover {
     background-size: 100% 88%;
