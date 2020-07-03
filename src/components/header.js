@@ -52,6 +52,7 @@ const Header = () => (
         <HomeLink to="/">Home</HomeLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="/portfolio">Portfolio</NavLink>
       </p>
     </Content>
   </SiteHeader>

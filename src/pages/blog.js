@@ -16,14 +16,14 @@ const ArticleDate = styled.h5`
   color: #606060;
 `;
 
-const MarkerHeader = styled.h2`
+const PostTitle = styled.h2`
   background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
-  // To enable yellow underlines on /blog page headers, change size eo 0.2em
   background-size: 100% 0em;
   background-repeat: no-repeat;
   background-position: 0px 88%;
   font-size: 1.8rem;
   transition: background-size 0.25s ease-in 0s;
+  margin-bottom: 1px;
 
   :hover {
     background-size: 100% 88%;
@@ -56,7 +56,7 @@ const BlogPage = ({ data }) => {
                   color: inherit;
                 `}
               >
-                <MarkerHeader>{node.frontmatter.title} </MarkerHeader>
+                <PostTitle>{node.frontmatter.title} </PostTitle>
                 <div>
                   <ArticleDate>{node.frontmatter.date}</ArticleDate>
                   <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
