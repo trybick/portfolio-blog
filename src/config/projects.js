@@ -19,7 +19,7 @@ export default [
     name: 'Terminal Zoom',
     framework: 'TypeScript',
     description: `VSCode extension to control the terminal's font-size.`,
-    year: '2020',
+    year: '2019',
     liveLink: 'https://marketplace.visualstudio.com/items?itemName=trybick.terminal-zoom',
     githubLink: 'https://github.com/trybick/vscode-terminal-zoom',
   },
