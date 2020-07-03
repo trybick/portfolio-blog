@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Button } from '@chakra-ui/core';
-import Layout from '../components/Layout1';
-import SEO from '../components/SEO1';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const Content = styled.div`
   margin: 0 auto;
