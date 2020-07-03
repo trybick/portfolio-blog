@@ -4,7 +4,7 @@ import { css, Global } from '@emotion/core';
 import styled from '@emotion/styled';
 import Header from './Header';
 import Footer from './Footer';
-import '../style/layout.css';
+import '../style/reset.css';
 
 const Content = styled.div`
   margin: 0 auto;
