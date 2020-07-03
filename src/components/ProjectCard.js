@@ -7,8 +7,17 @@ const Card = styled.div`
   box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
   padding: 0.85rem;
   min-width: 190px;
+  min-height: 150px;
   height: 100%;
   position: relative;
+
+  @media screen and (max-width: 580px) {
+    min-height: 130px;
+  }
+
+  @media screen and (max-width: 450px) {
+    min-height: 160px;
+  }
 `;
 
 const TopRow = styled.div`
@@ -21,6 +30,8 @@ const Title = styled.h4`
   font-size: 1rem;
   margin: 0;
   line-height: unset;
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 const Icons = styled.div`
@@ -30,28 +41,30 @@ const Icons = styled.div`
     margin-left: 8px;
   }
 `;
+const Description = styled.p`
+  font-size: 0.9rem;
+  line-height: 21px;
+  margin-bottom: 1.2rem;
+`;
 
 const Year = styled.p`
   font-size: 0.8rem;
   margin: 0;
   font-weight: 600;
-`;
 
-const Description = styled.p`
-  font-size: 0.9rem;
-  line-height: 18px;
-  margin-bottom: 1.2rem;
-`;
-
-const BottomRow = styled.div`
-  display: flex;
-  justify-content: space-between;
+  position: absolute;
+  bottom: 0.85rem;
+  left: 0.85rem;
 `;
 
 const Framework = styled.p`
   font-size: 0.8rem;
   margin: 0;
   font-style: italic;
+
+  position: absolute;
+  bottom: 0.85rem;
+  right: 0.85rem;
 `;
 
 const ProjectCard = ({ project: { name, description, year, framework, githubLink, liveLink } }) => (
@@ -70,10 +83,10 @@ const ProjectCard = ({ project: { name, description, year, framework, githubLink
 
     <Description>{description}</Description>
 
-    <BottomRow>
+    <div>
       <Year>{year}</Year>
       <Framework>{framework}</Framework>
-    </BottomRow>
+    </div>
   </Card>
 );
 
