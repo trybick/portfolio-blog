@@ -8,6 +8,13 @@ const Content = styled.div`
   font-size: 1.2rem;
 `;
 
+const SiteHeader = styled.header`
+  background: transparent;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+`;
+
 const NavLink = styled(Link)`
   color: black;
   margin-left: 15px;
@@ -36,13 +43,6 @@ const NavLink = styled(Link)`
 
 const HomeLink = styled(NavLink)`
   margin-left: 0;
-`;
-
-const SiteHeader = styled.header`
-  background: transparent;
-  display: flex;
-  align-content: center;
-  justify-content: center;
 `;
 
 const Header = () => (

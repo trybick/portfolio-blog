@@ -10,7 +10,7 @@ const Content = styled.div`
   padding: 1.45rem 1.0875rem;
 `;
 
-const MarkedHeader = styled.h1`
+const PostTitle = styled.h1`
   display: inline;
   background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
   background-size: 100% 0.2em;
@@ -20,24 +20,23 @@ const MarkedHeader = styled.h1`
   line-height: 50px;
 `;
 
-const HeaderDate = styled.h3`
+const Date = styled.h3`
   margin-top: 10px;
   color: #606060;
 `;
 
-// Here is where we can style tags contained inside the markdown file
 const MarkdownContent = styled.div`
   a {
     text-decoration: none;
     position: relative;
     font-style: italic;
     font-weight: 800;
-
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 88%;
     transition: background-size 0.25s ease-in;
-    &:hover {
+
+    :hover {
       position: relative;
       background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
       background-size: 100% 0.2em;
@@ -47,24 +46,21 @@ const MarkdownContent = styled.div`
   }
 `;
 
-export default ({ data }) => {
-  const post = data.markdownRemark;
-  return (
-    <Layout>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <Content>
-        <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
-        <HeaderDate>
-          {post.frontmatter.date} - {post.fields.readingTime.text}
-        </HeaderDate>
-        <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
-      </Content>
-    </Layout>
-  );
-};
+const Post = ({ data: { markdownRemark: post } }) => (
+  <Layout>
+    <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+    />
+    <Content>
+      <PostTitle>{post.frontmatter.title}</PostTitle>
+      <Date>
+        {post.frontmatter.date} - {post.fields.readingTime.text}
+      </Date>
+      <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
+    </Content>
+  </Layout>
+);
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -84,3 +80,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default Post;

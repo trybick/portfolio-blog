@@ -2,16 +2,16 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 
-const Container = styled.div`
-  text-align: center;
-`;
-
 const OuterContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   height: 78vh;
+`;
+
+const Content = styled.div`
+  text-align: center;
 `;
 
 const Description = styled.p`
@@ -39,10 +39,10 @@ const LandingBio = () => (
     `}
     render={data => (
       <OuterContainer>
-        <Container>
+        <Content>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>
-        </Container>
+        </Content>
       </OuterContainer>
     )}
   />

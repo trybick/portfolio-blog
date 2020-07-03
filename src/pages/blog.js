@@ -11,12 +11,12 @@ const Content = styled.div`
   padding: 1.45rem 1.0875rem;
 `;
 
-const ArticleDate = styled.h5`
+const CreatedDate = styled.h5`
   display: inline;
   color: #606060;
 `;
 
-const PostTitle = styled.h2`
+const Title = styled.h2`
   background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
   background-size: 100% 0em;
   background-repeat: no-repeat;
@@ -36,35 +36,36 @@ const ReadingTime = styled.h5`
 `;
 
 const BlogPage = ({ data }) => {
+  const parsedMarkdown = data.allMarkdownRemark.edges
+    .filter(({ node }) => {
+      const postDate = node.frontmatter.rawDate;
+      return new Date(postDate) < new Date();
+    })
+    .map(({ node }) => (
+      <div key={node.id}>
+        <Link
+          to={node.frontmatter.path}
+          css={css`
+            text-decoration: none;
+            color: inherit;
+          `}
+        >
+          <Title>{node.frontmatter.title}</Title>
+          <div>
+            <CreatedDate>{node.frontmatter.date}</CreatedDate>
+            <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
+          </div>
+          <p>{node.excerpt}</p>
+        </Link>
+      </div>
+    ));
+
   return (
     <Layout>
       <SEO title="Blog" />
       <Content>
         <h1>Blog</h1>
-        {data.allMarkdownRemark.edges
-          .filter(({ node }) => {
-            const rawDate = node.frontmatter.rawDate;
-            const date = new Date(rawDate);
-            return date < new Date();
-          })
-          .map(({ node }) => (
-            <div key={node.id}>
-              <Link
-                to={node.frontmatter.path}
-                css={css`
-                  text-decoration: none;
-                  color: inherit;
-                `}
-              >
-                <PostTitle>{node.frontmatter.title}</PostTitle>
-                <div>
-                  <ArticleDate>{node.frontmatter.date}</ArticleDate>
-                  <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
-                </div>
-                <p>{node.excerpt}</p>
-              </Link>
-            </div>
-          ))}
+        {parsedMarkdown}
       </Content>
     </Layout>
   );
