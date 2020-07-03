@@ -56,7 +56,7 @@ const BlogPage = ({ data }) => {
                   color: inherit;
                 `}
               >
-                <PostTitle>{node.frontmatter.title} </PostTitle>
+                <PostTitle>{node.frontmatter.title}</PostTitle>
                 <div>
                   <ArticleDate>{node.frontmatter.date}</ArticleDate>
                   <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
