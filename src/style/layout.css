@@ -602,33 +602,3 @@ pre tt:after {
   content: '';
 }
 
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
-h6::selection,
-p::selection,
-a::selection {
-  background: #fffa96cc;
-}
-
-/* gatsby-highlight is a class on code blocks */
-.gatsby-highlight {
-  background-color: #1d1f21;
-  border-radius: 0.3em;
-  margin: 0.5em 0;
-  padding: 1em;
-  overflow: auto;
-}
-
-.gatsby-highlight pre[class*='language-'].line-numbers {
-  padding: 0;
-  padding-left: 2.8em;
-  overflow: initial;
-}
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}

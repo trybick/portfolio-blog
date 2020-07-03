@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
+import { css, Global } from '@emotion/core';
 import styled from '@emotion/styled';
 import Header from './Header';
 import Footer from './Footer';
@@ -14,26 +14,41 @@ const Content = styled.div`
 `;
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+  <>
+    <Global
+      styles={css`
+        h1::selection,
+        h2::selection,
+        h3::selection,
+        h4::selection,
+        h5::selection,
+        h6::selection,
+        p::selection,
+        a::selection {
+          background: #fffa96cc;
         }
-      }
-    `}
-    render={data => (
-      <>
-        <Header />
-        <Content>
-          <main>{children}</main>
-        </Content>
-        <Footer />
-      </>
-    )}
-  />
+
+        .gatsby-highlight {
+          background-color: #1d1f21;
+          border-radius: 0.3em;
+          margin: 0.5em 0;
+          padding: 1em;
+          overflow: auto;
+        }
+
+        .gatsby-highlight pre[class*='language-'].line-numbers {
+          padding: 0;
+          padding-left: 2.8em;
+          overflow: initial;
+        }
+      `}
+    />
+    <Header />
+    <Content>
+      <main>{children}</main>
+    </Content>
+    <Footer />
+  </>
 );
 
 Layout.propTypes = {
