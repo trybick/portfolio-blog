@@ -27,7 +27,7 @@ const TopRow = styled.div`
 `;
 
 const Title = styled.h4`
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin: 0;
   line-height: unset;
   white-space: nowrap;
@@ -39,6 +39,10 @@ const Icons = styled.div`
 
   svg {
     margin-left: 8px;
+
+    :hover {
+      color: grey;
+    }
   }
 `;
 const Description = styled.p`
@@ -53,7 +57,7 @@ const Year = styled.p`
   font-weight: 600;
 
   position: absolute;
-  bottom: 0.85rem;
+  bottom: 0.52rem;
   left: 0.85rem;
 `;
 
@@ -63,7 +67,7 @@ const Framework = styled.p`
   font-style: italic;
 
   position: absolute;
-  bottom: 0.85rem;
+  bottom: 0.52rem;
   right: 0.85rem;
 `;
 
@@ -73,10 +77,10 @@ const ProjectCard = ({ project: { name, description, year, framework, githubLink
       <Title>{name}</Title>
       <Icons>
         <a href={githubLink} target="_blank" rel="noreferrer">
-          <FaGithub size="1rem" />
+          <FaGithub size="1.05rem" />
         </a>
         <a href={liveLink} target="_blank" rel="noreferrer">
-          <FaGlobeAmericas size="1rem" />
+          <FaGlobeAmericas size="1.05rem" />
         </a>
       </Icons>
     </TopRow>
