@@ -49,9 +49,15 @@ const CityContainer = styled.span`
 const Footer = () => (
   <FooterContainer>
     <TopRow>
-      <ContactLink href="https://github.com/trybick">GitHub</ContactLink>
-      <ContactLink href="https://www.linkedin.com/in/tim-rybicki/">LinkedIn</ContactLink>
-      <ContactLink href="https://www.youtube.com/celtic426">YouTube</ContactLink>
+      <ContactLink href="https://github.com/trybick" target="_blank" rel="noreferrer">
+        GitHub
+      </ContactLink>
+      <ContactLink href="https://www.linkedin.com/in/tim-rybicki/" target="_blank" rel="noreferrer">
+        LinkedIn
+      </ContactLink>
+      <ContactLink href="https://www.youtube.com/celtic426" target="_blank" rel="noreferrer">
+        YouTube
+      </ContactLink>
     </TopRow>
 
     <FooterRow>
