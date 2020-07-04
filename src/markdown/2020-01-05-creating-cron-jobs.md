@@ -24,7 +24,7 @@ You may want to redirect the output of a command like this: `ls > /dev/null 2>&1
 
 ## Listing Jobs
 
-```javascript
+```js
 const jobs = crontab.jobs();
 ```
 

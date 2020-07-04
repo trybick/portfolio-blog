@@ -26,7 +26,7 @@ _The public RSA key is copied to GitHub while the private key lives on your mach
 2. Running `ls -a` should list your new keys.
 3. Enter `cat id_rsa_primary.pub` and copy the output. It should start with `ssh-rsa` and end with your email address.
 
-```terminal
+```shell
 tim@mac .ssh $ cat id_rsa_primary.pub
 ssh-rsa [your key] email@gmail.com
 ```
@@ -41,7 +41,7 @@ ssh-rsa [your key] email@gmail.com
 
 _The first 'Host' block makes your ssh keys persist across reboots. The next two blocks setup an alias which points to an ssh key._
 
-```bash
+```shell
 Host *
 	AddKeysToAgent yes
 	UseKeychain yes
@@ -68,7 +68,7 @@ _The 'ssh-add' command activates a key on your system._
 3. Repeat for second account: `ssh-add -K ~/.ssh/id_rsa_secondary`.
 4. You can confirm they have been added with `ssh-add -l`.
 
-```terminal
+```shell
 2048 SHA256:8moy5Zmdc1XDMv64mh1LHG/13zcmbYCPaY9sFwkWuFM /Users/tim/.ssh/id_rsa_primary (RSA)
 2048 SHA256:NOlGpixtyoCK7RyWoVTd7z6k/PFyEaEEeV9YpIij8Sc /Users/tim/.ssh/id_rsa_secondary (RSA)
 ```
@@ -80,12 +80,9 @@ _Connect to GitHub and you should receive a success message._
 1. Enter `ssh -T git@primary.github.com`.
 2. Repeat step 1 for your second account.
 
-```terminal
+```shell
 $ ssh -T git@primary.github.com
-Hi tim! You've successfully authenticated, but GitHub does not provide shell access.
-
-$ ssh -T git@secondary.github.com
-Hi tim! You've successfully authenticated, but GitHub does not provide shell access.
+`Hi tim! You've successfully authenticated, but GitHub does not provide shell access.`
 ```
 
 ### Edit git config

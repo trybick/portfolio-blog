@@ -11,7 +11,7 @@ Get up and running in minutes with this concise guide.
 
 Install the pre-requisites and run the wizard:
 
-```terminal
+```shell
 npm install -g yo generator-code
 yo code
 ```
@@ -45,7 +45,7 @@ My extension [Terminal Zoom](https://github.com/trybick/vscode-terminal-zoom/blo
 
 Once your extension is published and you make changes to your code, you can push updates by running the publish command followed by your choice of a version incrementor:
 
-```terminal
+```shell
 vsce publish [minor | major | patch]
 ```
 
