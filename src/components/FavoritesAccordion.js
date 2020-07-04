@@ -28,9 +28,9 @@ const FavoritesAccordion = () => (
     margin="0 auto"
     maxWidth="600px"
   >
-    <Accordion allowToggle>
+    <Accordion allowToggle defaultIndex={-1}>
       {favorites.map(category => (
-        <AccordionItem>
+        <AccordionItem key={category.title}>
           <AccordionHeader
             backgroundColor="white"
             borderColor="rgb(226, 232, 240)"
@@ -50,7 +50,7 @@ const FavoritesAccordion = () => (
           <AccordionPanel pb={0} pt={0.9} pl={2}>
             <List spacing={2}>
               {category.items.map(item => (
-                <ListItem fontSize="16px">
+                <ListItem key={item} fontSize="16px">
                   <ListIcon icon="arrow-forward" size="16px" />
                   {item}
                 </ListItem>

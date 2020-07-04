@@ -25,7 +25,8 @@ const ViewResumeButton = () => (
         leftIcon="chevron-right"
         size="sm"
         variant="ghost"
-        variantColor="white"
+        backgroundColor="white"
+        color="black"
         _hover={{ bg: '#ebedf0', cursor: 'pointer' }}
       >
         View Resume
