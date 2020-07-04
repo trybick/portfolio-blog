@@ -15,6 +15,11 @@ const PageTitle = styled.h1`
   margin-bottom: 4px;
 `;
 
+const FavoritesTitle = styled.h4`
+  text-align: center;
+  margin-top: 40px;
+`;
+
 const AboutPage = () => {
   return (
     <Layout>
@@ -29,7 +34,8 @@ const AboutPage = () => {
           running, and building computers.
         </p>
 
-        <p>These are some of my favorite things!</p>
+        {/* <p>These are some of my favorite things!</p> */}
+        <FavoritesTitle>Some of my favorite things!</FavoritesTitle>
         <FavoritesAccordion />
       </Content>
     </Layout>

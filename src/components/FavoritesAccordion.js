@@ -24,7 +24,7 @@ const FavoritesAccordion = () => (
     border="1px solid"
     borderColor="rgb(226, 232, 240)"
     padding=".75rem"
-    margin="0 auto"
+    margin="0 auto 20px"
     maxWidth="500px"
   >
     <Accordion allowToggle defaultIndex={-1}>

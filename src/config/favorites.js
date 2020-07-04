@@ -23,7 +23,7 @@ export default [
   },
   {
     title: 'Podcasts',
-    items: ['Syntax FM', 'Darknet Diaries,', `Dan Carlin's Hardcore History`],
+    items: ['Syntax FM', 'Darknet Diaries', `Dan Carlin's Hardcore History`],
     icon: IoIosMic,
   },
 ];
