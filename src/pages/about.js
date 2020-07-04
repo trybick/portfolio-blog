@@ -22,6 +22,7 @@ const AboutPage = () => {
       <Content>
         <PageTitle>About</PageTitle>
         <ViewResumeButton />
+
         <p>
           Hey there, I'm Tim and I'm a software developer specializing in React.js and JavaScript. I
           enjoy finding fast and simple ways of doing things. My other passions are playing music,
