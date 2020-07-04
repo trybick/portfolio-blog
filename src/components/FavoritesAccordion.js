@@ -11,7 +11,6 @@ import {
   ListItem,
   ListIcon,
 } from '@chakra-ui/core';
-
 import favorites from '../config/favorites';
 
 const CategoryTitle = styled.span`
@@ -21,13 +20,12 @@ const CategoryTitle = styled.span`
 
 const FavoritesAccordion = () => (
   <Box
-    borderRadius=".025rem"
+    borderRadius=".25rem"
     border="1px solid"
     borderColor="rgb(226, 232, 240)"
     padding=".75rem"
     margin="0 auto"
     maxWidth="500px"
-    borderRadius=".25rem"
   >
     <Accordion allowToggle defaultIndex={-1}>
       {favorites.map(category => (
