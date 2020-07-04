@@ -4,6 +4,8 @@ import { Button } from '@chakra-ui/core';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
+const resumeHref = 'https://drive.google.com/file/d/1t1BnEI714ydFMA7APf4tkwcCHJEBWzpd/edit';
+
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
@@ -11,16 +13,16 @@ const Content = styled.div`
 `;
 
 const PageTitle = styled.h1`
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 `;
 
 const ResumeLinkContainer = styled.div`
   text-align: right;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   @media screen and (max-width: 450px) {
     text-align: left;
-  margin: 20px 0;
+    margin: 20px 0;
   }
 `;
 
@@ -35,11 +37,7 @@ const AboutPage = () => {
       <Content>
         <PageTitle>About</PageTitle>
         <ResumeLinkContainer>
-          <ResumeLink
-            href="https://drive.google.com/file/d/1t1BnEI714ydFMA7APf4tkwcCHJEBWzpd/edit"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <ResumeLink href={resumeHref} target="_blank" rel="noreferrer">
             <Button
               leftIcon="chevron-right"
               size="sm"
