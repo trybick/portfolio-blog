@@ -33,7 +33,8 @@ module.exports = {
             resolve: `gatsby-remark-prismjs`,
             options: {
               aliases: { sh: 'bash', js: 'javascript' },
-              showLineNumbers: true,
+              showLineNumbers: false,
+              noInlineHighlight: true,
             },
           },
         ],
@@ -64,6 +65,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       },
-    }
+    },
   ],
 };

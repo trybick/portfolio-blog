@@ -20,7 +20,7 @@ const ResumeLinkContainer = styled.div`
 
   @media screen and (max-width: 450px) {
     text-align: left;
-    margin: 20px 0;
+  margin: 20px 0;
   }
 `;
 
