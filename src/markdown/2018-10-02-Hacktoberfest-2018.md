@@ -1,5 +1,5 @@
 ---
-title: 'Hacktoberfest 2018'
+title: 'Free T-shirts during Hacktoberfest'
 date: '2018-10-02'
 draft: false
 path: '/blog/hacktoberfest'

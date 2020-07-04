@@ -47,6 +47,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
+    "react-spring": "^8.0.27",
     "typeface-nunito": "1.1.3",
     "yarn": "^1.22.4"
   },
