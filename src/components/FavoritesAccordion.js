@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from '@emotion/styled';
 import {
   Accordion,
   AccordionItem,
@@ -10,7 +11,13 @@ import {
   ListItem,
   ListIcon,
 } from '@chakra-ui/core';
+
 import favorites from '../config/favorites';
+
+const CategoryTitle = styled.span`
+  margin-left: 5px;
+  vertical-align: middle;
+`;
 
 const FavoritesAccordion = () => (
   <Box
@@ -31,17 +38,20 @@ const FavoritesAccordion = () => (
             borderLeftWidth="0"
             borderBottomWidth="0"
             borderTopWidth="1px"
+            pl={3}
+            pr={3}
           >
             <Box flex="1" textAlign="left">
-              {category.header}
+              <Box as={category.icon} size="15px" verticalAlign="middle" />
+              <CategoryTitle>{category.title}</CategoryTitle>
             </Box>
             <AccordionIcon />
           </AccordionHeader>
-          <AccordionPanel pb={2}>
+          <AccordionPanel pb={0} pt={0.9} pl={2}>
             <List spacing={2}>
               {category.items.map(item => (
-                <ListItem>
-                  <ListIcon icon="arrow-forward" />
+                <ListItem fontSize="16px">
+                  <ListIcon icon="arrow-forward" size="16px" />
                   {item}
                 </ListItem>
               ))}
