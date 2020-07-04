@@ -54,7 +54,7 @@ const Footer = () => (
 
     <FooterRow>
       <span role="img" aria-label="astronaut">
-        ☀️
+        👨‍🚀
       </span>
       <CityContainer>Boston, MA {new Date().getFullYear()}</CityContainer>
     </FooterRow>

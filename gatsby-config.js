@@ -58,10 +58,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `portfolio-blog`,
-        short_name: `starter`,
+        short_name: `portfolio-blog`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
         icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       },
