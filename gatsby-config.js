@@ -3,7 +3,7 @@ module.exports = {
     title: `Tim Rybicki`,
     subtitle: `software developer and musician`,
     description: `Portfolio and blog`,
-    author: `@trybick`,
+    author: `Tim Rybicki`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -64,6 +64,12 @@ module.exports = {
         theme_color: `#fff`,
         display: `minimal-ui`,
         icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_ID || 'none', // netlify env variable
       },
     },
   ],
