@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Button } from '@chakra-ui/core';
+import { GrDocumentPdf } from 'react-icons/gr';
 
 const resumeHref = 'https://drive.google.com/file/d/1t1BnEI714ydFMA7APf4tkwcCHJEBWzpd/edit';
 
@@ -22,7 +23,7 @@ const ViewResumeButton = () => (
   <ResumeLinkContainer>
     <ResumeLink href={resumeHref} target="_blank" rel="noreferrer">
       <Button
-        leftIcon="chevron-right"
+        leftIcon={GrDocumentPdf}
         size="sm"
         variant="ghost"
         backgroundColor="white"

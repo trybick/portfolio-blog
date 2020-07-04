@@ -26,7 +26,8 @@ const FavoritesAccordion = () => (
     borderColor="rgb(226, 232, 240)"
     padding=".75rem"
     margin="0 auto"
-    maxWidth="600px"
+    maxWidth="500px"
+    borderRadius=".25rem"
   >
     <Accordion allowToggle defaultIndex={-1}>
       {favorites.map(category => (

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Box } from '@chakra-ui/core';
+import { DiReact } from 'react-icons/di';
 
 const FooterContainer = styled.footer`
   padding-bottom: 30px;
@@ -41,7 +43,7 @@ const ContactLink = styled.a`
 `;
 
 const CityContainer = styled.span`
-  margin-left: 5px;
+  margin-left: 2px;
 `;
 
 const Footer = () => (
@@ -53,9 +55,7 @@ const Footer = () => (
     </TopRow>
 
     <FooterRow>
-      <span role="img" aria-label="astronaut">
-        👨‍🚀
-      </span>
+      <Box as={DiReact} size="24px" verticalAlign="middle" />
       <CityContainer>Boston, MA {new Date().getFullYear()}</CityContainer>
     </FooterRow>
   </FooterContainer>

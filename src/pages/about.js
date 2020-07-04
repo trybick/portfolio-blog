@@ -28,8 +28,8 @@ const AboutPage = () => {
           enjoy finding fast and simple ways of doing things. My other passions are playing music,
           running, and building computers.
         </p>
-        <p>More to come soon</p>
 
+        <p>These are some of my favorite things:</p>
         <FavoritesAccordion />
       </Content>
     </Layout>
