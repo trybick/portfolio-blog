@@ -29,7 +29,7 @@ const AboutPage = () => {
           running, and building computers.
         </p>
 
-        <p>These are some of my favorite things:</p>
+        <p>These are some of my favorite things!</p>
         <FavoritesAccordion />
       </Content>
     </Layout>

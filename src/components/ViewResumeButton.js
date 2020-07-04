@@ -28,6 +28,7 @@ const ViewResumeButton = () => (
         variant="ghost"
         backgroundColor="white"
         color="black"
+        _focus={{ boxShadow: '0' }}
         _hover={{ bg: '#ebedf0', cursor: 'pointer' }}
       >
         View Resume

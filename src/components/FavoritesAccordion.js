@@ -41,6 +41,7 @@ const FavoritesAccordion = () => (
             borderTopWidth="1px"
             pl={3}
             pr={3}
+            _focus={{ boxShadow: '0' }}
           >
             <Box flex="1" textAlign="left">
               <Box as={category.icon} size="15px" verticalAlign="middle" />
