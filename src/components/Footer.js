@@ -42,6 +42,10 @@ const ContactLink = styled.a`
   }
 `;
 
+const FirstContactLink = styled(ContactLink)`
+  margin-left: 0;
+`;
+
 const CityContainer = styled.span`
   margin-left: 0.8px;
 `;
@@ -49,9 +53,9 @@ const CityContainer = styled.span`
 const Footer = () => (
   <FooterContainer>
     <TopRow>
-      <ContactLink href="https://github.com/trybick" target="_blank" rel="noreferrer">
+      <FirstContactLink href="https://github.com/trybick" target="_blank" rel="noreferrer">
         GitHub
-      </ContactLink>
+      </FirstContactLink>
       <ContactLink href="https://www.linkedin.com/in/tim-rybicki/" target="_blank" rel="noreferrer">
         LinkedIn
       </ContactLink>

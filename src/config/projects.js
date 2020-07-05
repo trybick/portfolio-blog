@@ -2,7 +2,7 @@ export default [
   {
     name: 'TV Minder',
     framework: 'React.js & Express.js',
-    description: 'Full-stack application to track shows on calendar.',
+    description: 'Full-stack application to track TV show schedules.',
     year: '2020',
     liveLink: 'https://tv-minder.com/',
     githubLink: 'https://github.com/trybick/tv-minder',
