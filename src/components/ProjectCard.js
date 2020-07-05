@@ -72,7 +72,7 @@ const Framework = styled.p`
   right: 0.85rem;
 `;
 
-const createIconWithPopover = (icon, link, description) => (
+const createIconWithPopover = (icon, link, description, popoverWidth) => (
   <Popover trigger="hover">
     <PopoverTrigger>
       <a href={link} target="_blank" rel="noreferrer">
@@ -86,8 +86,8 @@ const createIconWithPopover = (icon, link, description) => (
       color="white"
       fontSize="14px"
       fontWeight="bold"
-      // height="34px"
-      // width="122px"
+      height="34px"
+      width={popoverWidth}
       zIndex={4}
     >
       <Box p={1}>{description}</Box>
@@ -100,8 +100,18 @@ const ProjectCard = ({ project: { name, description, year, framework, githubLink
     <TopRow>
       <Title>{name}</Title>
       <Icons>
-        {createIconWithPopover(<FaGithub size="1.05rem" />, githubLink, 'Check repository')}
-        {createIconWithPopover(<FaGlobeAmericas size="1.05rem" />, liveLink, 'See project')}
+        {createIconWithPopover(
+          <FaGithub size="1.05rem" />,
+          githubLink,
+          'Check repository',
+          '120px'
+        )}
+        {createIconWithPopover(
+          <FaGlobeAmericas size="1.05rem" />,
+          liveLink,
+          'See project',
+          '83px'
+        )}
       </Icons>
     </TopRow>
 
