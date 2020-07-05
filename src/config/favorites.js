@@ -1,6 +1,7 @@
-import { IoIosMic, IoIosMusicalNotes, IoIosVideocam, IoMdPeople } from 'react-icons/io';
-import { BsDisplay } from 'react-icons/bs';
 import { AiOutlineRead } from 'react-icons/ai';
+import { BsDisplay } from 'react-icons/bs';
+import { IoIosMic, IoIosMusicalNotes, IoIosVideocam, IoMdPeople } from 'react-icons/io';
+import { MdFormatQuote } from 'react-icons/md';
 
 export default [
   {
@@ -129,5 +130,20 @@ export default [
       },
     ],
     icon: AiOutlineRead,
+  },
+  {
+    title: 'Quotes',
+    items: [
+      {
+        name: `"Rules for happiness: something to do, someone to love, something to hope for." - Immanuel Kant`,
+      },
+      {
+        name: `"Don't demand that things happen as you wish, but wish that they happen as they do happen, and you will go on well". - Epictetus`,
+      },
+      {
+        name: `"What happens when we allow everything to be exactly as it is?" - Adyashanti`,
+      },
+    ],
+    icon: MdFormatQuote,
   },
 ];
