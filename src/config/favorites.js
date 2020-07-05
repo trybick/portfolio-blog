@@ -107,4 +107,26 @@ export default [
     ],
     icon: IoIosMic,
   },
+  {
+    title: 'Books',
+    items: [
+      {
+        name: 'Snow Crash - Neal Stephenson',
+        link: 'https://www.goodreads.com/book/show/830.Snow_Crash',
+      },
+      {
+        name: 'Stories of Your Life and Others - Ted Chiang',
+        link: 'https://www.goodreads.com/book/show/223380.Stories_of_Your_Life_and_Others',
+      },
+      {
+        name: 'Empire of the Summer Moon - S.C. Gwynne',
+        link: 'https://www.goodreads.com/book/show/7648269-empire-of-the-summer-moon',
+      },
+      {
+        name: 'House of Leaves - Mark Z. Danielewski',
+        link: 'https://www.goodreads.com/book/show/24800.House_of_Leaves',
+      },
+    ],
+    icon: IoIosMic,
+  },
 ];
