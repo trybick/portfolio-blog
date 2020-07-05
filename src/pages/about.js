@@ -34,7 +34,6 @@ const AboutPage = () => {
           running, and building computers.
         </p>
 
-        {/* <p>These are some of my favorite things!</p> */}
         <FavoritesTitle>Some of my favorite things!</FavoritesTitle>
         <FavoritesAccordion />
       </Content>
