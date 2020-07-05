@@ -43,7 +43,7 @@ const ContactLink = styled.a`
 `;
 
 const CityContainer = styled.span`
-  margin-left: 2px;
+  margin-left: 0.8px;
 `;
 
 const Footer = () => (
@@ -61,7 +61,7 @@ const Footer = () => (
     </TopRow>
 
     <FooterRow>
-      <Box as={DiReact} size="24px" verticalAlign="middle" />
+      <Box as={DiReact} size="24.5px" verticalAlign="middle" />
       <CityContainer>Boston, MA {new Date().getFullYear()}</CityContainer>
     </FooterRow>
   </FooterContainer>

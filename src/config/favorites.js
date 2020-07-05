@@ -22,19 +22,19 @@ export default [
     items: [
       {
         name: 'When I Was Done Dying - Dan Deacon',
-        link: 'https://www.youtube.com/watch?v=TuJqUvBj4rE',
+        link: 'https://www.youtube.com/results?search_query=dan+deacon+when+i+was+done+dying',
       },
       {
         name: 'Weird Fishes - Radiohead',
-        link: 'https://www.youtube.com/watch?v=TNRCvG9YtYI',
+        link: 'https://www.youtube.com/results?search_query=radiohead+weird+fishes',
       },
       {
         name: 'I Can Almost See You - Hammock',
-        link: 'https://www.youtube.com/watch?v=rsJTpxcy_sc',
+        link: 'https://www.youtube.com/results?search_query=hammock+i+can+almost+see+you',
       },
       {
         name: 'Glósóli - Sigur Ros',
-        link: 'https://www.youtube.com/watch?v=Bz8iEJeh26E',
+        link: 'https://www.youtube.com/results?search_query=sigur+ros+glosoli',
       },
     ],
     icon: IoIosMusicalNotes,
