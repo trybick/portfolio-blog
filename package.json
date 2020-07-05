@@ -17,9 +17,8 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "develop": "gatsby develop -o -p 8001",
-    "format": "prettier --write \"**/*.{js,jsx}\"",
-    "start": "npm run develop"
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "start": "gatsby develop -o -p 8001"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",

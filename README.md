@@ -5,3 +5,13 @@
 ## Technologies
 
 - Gatsby, React, Emotion, Chakra UI
+- I used [this](https://github.com/niklasmtj/gatsby-starter-julia) Gatsby starter as a base (more starters [here](https://www.gatsbyjs.org/starters/?v=2))
+
+## Local Development
+
+To run the local dev server:
+
+```shell
+yarn
+yarn start
+```
