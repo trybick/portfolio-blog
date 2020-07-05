@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Box, Popover, PopoverTrigger, PopoverContent } from '@chakra-ui/core';
 import { FaGithub, FaGlobeAmericas } from 'react-icons/fa';
 
 const Card = styled.div`
@@ -71,17 +72,36 @@ const Framework = styled.p`
   right: 0.85rem;
 `;
 
+const createIconWithPopover = (icon, link, description) => (
+  <Popover trigger="hover">
+    <PopoverTrigger>
+      <a href={link} target="_blank" rel="noreferrer">
+        {icon}
+      </a>
+    </PopoverTrigger>
+
+    <PopoverContent
+      backgroundColor="black"
+      border="0"
+      color="white"
+      fontSize="14px"
+      fontWeight="bold"
+      // height="34px"
+      // width="122px"
+      zIndex={4}
+    >
+      <Box p={1}>{description}</Box>
+    </PopoverContent>
+  </Popover>
+);
+
 const ProjectCard = ({ project: { name, description, year, framework, githubLink, liveLink } }) => (
   <Card key={name}>
     <TopRow>
       <Title>{name}</Title>
       <Icons>
-        <a href={githubLink} target="_blank" rel="noreferrer">
-          <FaGithub size="1.05rem" />
-        </a>
-        <a href={liveLink} target="_blank" rel="noreferrer">
-          <FaGlobeAmericas size="1.05rem" />
-        </a>
+        {createIconWithPopover(<FaGithub size="1.05rem" />, githubLink, 'Check repository')}
+        {createIconWithPopover(<FaGlobeAmericas size="1.05rem" />, liveLink, 'See project')}
       </Icons>
     </TopRow>
 
