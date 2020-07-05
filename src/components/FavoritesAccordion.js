@@ -7,6 +7,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Link,
   List,
   ListItem,
   ListIcon,
@@ -14,7 +15,7 @@ import {
 import favorites from '../config/favorites';
 
 const CategoryTitle = styled.span`
-  margin-left: 5px;
+  margin-left: 8px;
   vertical-align: middle;
 `;
 
@@ -47,12 +48,14 @@ const FavoritesAccordion = () => (
             </Box>
             <AccordionIcon />
           </AccordionHeader>
-          <AccordionPanel pb={0} pt={0.9} pl={2}>
+          <AccordionPanel pb={0} pt={2} pl={0}>
             <List spacing={2}>
               {category.items.map(item => (
-                <ListItem key={item} fontSize="16px">
+                <ListItem key={item.name} fontSize="16px">
                   <ListIcon icon="arrow-forward" size="16px" />
-                  {item}
+                  <Link href={item.link} isExternal>
+                    {item.name}
+                  </Link>
                 </ListItem>
               ))}
             </List>
