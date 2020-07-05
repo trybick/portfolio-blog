@@ -1,9 +1,10 @@
 import { IoIosMic, IoIosMusicalNotes, IoIosVideocam, IoMdPeople } from 'react-icons/io';
-import { MdSlideshow } from 'react-icons/md';
+import { BsDisplay } from 'react-icons/bs';
+import { AiOutlineRead } from 'react-icons/ai';
 
 export default [
   {
-    title: 'Music Artists',
+    title: 'Bands',
     items: [
       { name: 'Radiohead', link: 'https://www.youtube.com/results?search_query=radiohead' },
       { name: 'Muse', link: 'https://www.youtube.com/results?search_query=muse' },
@@ -87,7 +88,7 @@ export default [
           'https://www.google.com/search?q=succession+tv+show&rlz=1C5CHFA_enUS891US891&oq=succession+tv+show&aqs=chrome..69i57j46j0l6.3470j0j9&sourceid=chrome&ie=UTF-8',
       },
     ],
-    icon: MdSlideshow,
+    icon: BsDisplay,
   },
   {
     title: 'Podcasts',
@@ -127,6 +128,6 @@ export default [
         link: 'https://www.goodreads.com/book/show/24800.House_of_Leaves',
       },
     ],
-    icon: IoIosMic,
+    icon: AiOutlineRead,
   },
 ];
