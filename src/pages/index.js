@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Tim Rybicki" keywords={[`tim rybicki`, `portfolio`, `blog`]} />
+    <SEO title="Home" keywords={[`tim rybicki`, `portfolio`, `blog`]} />
     <LandingBio />
   </Layout>
 );
