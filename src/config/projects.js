@@ -2,7 +2,7 @@ export default [
   {
     name: 'TV Minder',
     framework: 'React.js & Express.js',
-    description: 'Full-stack application to track TV show schedules.',
+    description: 'Full-stack application to track TV show schedules (in progress!).',
     year: '2020',
     liveLink: 'https://tv-minder.com/',
     githubLink: 'https://github.com/trybick/tv-minder',
@@ -34,7 +34,7 @@ export default [
   {
     name: 'Slack Location Manager',
     framework: 'Node.js',
-    description: `Globally-installable npm tool which updates your status on Slack with your location.`,
+    description: `Automated command line tool which updates your Slack status based on location.`,
     year: '2019',
     liveLink: 'https://www.npmjs.com/package/slack-location-manager',
     githubLink: 'https://github.com/trybick/slack-location-manager',
@@ -42,7 +42,7 @@ export default [
   {
     name: 'Sick Picks',
     framework: 'React.js & Node.js',
-    description: `Browse a collection of recommendations from the hosts of a web development podcast.`,
+    description: `A compilation of recommendations from the hosts of a web development podcast.`,
     year: '2018',
     liveLink: 'https://sickpicks.netlify.com/',
     githubLink: 'https://github.com/trybick/sick-picks-scraper',
