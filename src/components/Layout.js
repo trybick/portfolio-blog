@@ -28,6 +28,15 @@ const Layout = ({ children }) => (
           a::selection {
             background: #fffa96cc;
           }
+
+          :not(pre) > code[class*='language-'],
+          pre[class*='language-'] {
+            margin: 25px 0;
+          }
+
+          :not(pre) > code {
+            font-size: .9rem;
+          }
         `}
       />
       <Header />
