@@ -5,8 +5,6 @@ draft: false
 path: '/blog/ecs-ssl-nginx'
 ---
 
-## Background
-
 I was using ECS Fargate to serve a NodeJS API for a project, but Fargate essentially requires the use of a load balancer which costs $16 a month. I switched to using the EC2 version of ECS but was left with a problem of how to get SSL working to allow HTTPS traffic.
 
 ## Overview
