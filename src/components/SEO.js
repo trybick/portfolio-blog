@@ -8,9 +8,9 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '' })
       query {
         site {
           siteMetadata {
-            title
             description
             author
+            title
           }
         }
       }
@@ -18,13 +18,14 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '' })
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const staticTitle = 'Tim Rybicki';
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={staticTitle}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -33,7 +34,7 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '' })
         },
         {
           property: `og:title`,
-          content: title,
+          content: staticTitle,
         },
         {
           property: `og:description`,
@@ -53,7 +54,7 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '' })
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: staticTitle,
         },
         {
           name: `twitter:description`,
