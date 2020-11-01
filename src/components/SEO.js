@@ -20,6 +20,7 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '', i
 
   const metaDescription = description || site.siteMetadata.description;
   const staticTitle = 'Tim Rybicki';
+  const staticImage = 'https://timr.dev/screenshot-portfolio.png';
 
   return (
     <Helmet
@@ -30,16 +31,16 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '', i
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: `image`,
-          content: site.siteMetadata.image,
+          itemprop: `image`,
+          content: staticImage,
         },
         {
-          name: `og:image`,
-          content: site.siteMetadata.image,
+          property: `og:image`,
+          content: staticImage,
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          content: staticImage,
         },
         {
           name: `description`,
