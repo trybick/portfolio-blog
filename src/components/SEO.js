@@ -30,21 +30,27 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '', i
       title={staticTitle}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
+        //  Google / Search Engine Tags
+        {
+          itemprop: `name`,
+          content: staticTitle,
+        },
+        {
+          itemprop: `description`,
+          content: metaDescription,
+        },
         {
           itemprop: `image`,
           content: staticImage,
         },
+        // Facebook Meta Tags
         {
-          property: `og:image`,
-          content: staticImage,
+          property: `og:url`,
+          content: 'https://timr.dev',
         },
         {
-          name: `twitter:image`,
-          content: staticImage,
-        },
-        {
-          name: `description`,
-          content: metaDescription,
+          property: `og:type`,
+          content: 'website',
         },
         {
           property: `og:title`,
@@ -55,16 +61,13 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '', i
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: `og:image`,
+          content: staticImage,
         },
+        // Twitter Meta Tags
         {
           name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:title`,
@@ -73,6 +76,10 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '', i
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: staticImage,
         },
       ]
         .concat(
