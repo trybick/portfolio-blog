@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang = 'en', meta = [], keywords = [], title = '' }) {
+function SEO({ description, lang = 'en', meta = [], keywords = [], title = '', image = '' }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -11,6 +11,7 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '' })
             description
             author
             title
+            image
           }
         }
       }
@@ -28,6 +29,18 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '' })
       title={staticTitle}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
+        {
+          name: `image`,
+          content: site.siteMetadata.image,
+        },
+        {
+          name: `og:image`,
+          content: site.siteMetadata.image,
+        },
+        {
+          name: `twitter:image`,
+          content: site.siteMetadata.image,
+        },
         {
           name: `description`,
           content: metaDescription,

@@ -4,7 +4,7 @@ module.exports = {
     subtitle: `software developer & musician`,
     description: `Software Development Portfolio and Blog`,
     author: `Tim Rybicki`,
-    image: './src/images/screenshot-portfolio.png',
+    image: 'screenshot-portfolio.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
