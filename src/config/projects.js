@@ -1,15 +1,23 @@
 export default [
   {
+    name: 'Gif Convert',
+    framework: 'Electron & React',
+    description: 'Browser and desktop app to convert video to GIF.',
+    year: '2021',
+    liveLink: 'https://gifconvert.com/',
+    githubLink: 'https://github.com/trybick/gifconvert',
+  },
+  {
     name: 'TV Minder',
-    framework: 'React.js & Express.js',
-    description: 'Full-stack application to track TV show schedules (in progress!).',
+    framework: 'React & Express',
+    description: 'Full-stack application to track TV show schedules.',
     year: '2020',
     liveLink: 'https://tv-minder.com/',
     githubLink: 'https://github.com/trybick/tv-minder',
   },
   {
     name: 'Tray Tuner',
-    framework: 'TypeScript & Electron',
+    framework: 'Electron',
     description: 'Desktop music application for online radio stations.',
     year: '2020',
     liveLink: 'https://traytuner.com/',
@@ -25,7 +33,7 @@ export default [
   },
   {
     name: 'Issue Collab',
-    framework: 'React.js',
+    framework: 'React',
     description: `Search tool for GitHub Issues inspired by Hacktoberfest.`,
     year: '2019',
     liveLink: 'https://issue-collab.dev/',
@@ -41,7 +49,7 @@ export default [
   },
   {
     name: 'Sick Picks',
-    framework: 'React.js & Node.js',
+    framework: 'React & Node.js',
     description: `A compilation of recommendations from the hosts of a web development podcast.`,
     year: '2018',
     liveLink: 'https://sickpicks.netlify.com/',
