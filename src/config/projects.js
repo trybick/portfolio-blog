@@ -20,7 +20,7 @@ export default [
     framework: 'Electron',
     description: 'Desktop music application for online radio stations.',
     year: '2020',
-    liveLink: 'https://traytuner.com/',
+    liveLink: 'https://traytuner.netlify.app/',
     githubLink: 'https://github.com/trybick/tray-tuner',
   },
   {
