@@ -16,12 +16,12 @@ export default [
     githubLink: 'https://github.com/trybick/tv-minder',
   },
   {
-    name: 'Tray Tuner',
+    name: 'Trance Tuner',
     framework: 'Electron',
     description: 'Desktop music application for online radio stations.',
     year: '2020',
-    liveLink: 'https://traytuner.netlify.app/',
-    githubLink: 'https://github.com/trybick/tray-tuner',
+    liveLink: 'https://trancetuner.netlify.app/',
+    githubLink: 'https://github.com/trybick/trance-tuner',
   },
   {
     name: 'Terminal Zoom',
