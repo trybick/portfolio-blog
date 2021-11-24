@@ -43,6 +43,11 @@ export default [
     title: 'Movies',
     items: [
       {
+        name: 'Dune (2021)',
+        link:
+          'https://www.google.com/search?q=dune+2021&rlz=1C5CHFA_enUS891US891&oq=dune+2021&aqs=chrome.0.69i59j0i271l2j69i60l3j69i61l2.753j0j7&sourceid=chrome&ie=UTF-8',
+      },
+      {
         name: 'Only Lovers Left Alive',
         link:
           'https://www.google.com/search?safe=off&rlz=1C5CHFA_enUS891US891&sxsrf=ALeKk004hoE2D4tM6ki3r6rouFGDF45DaQ%3A1593907710427&ei=_hkBX8nVGcuvytMP1fGG8As&q=only+lovers+left+alive+2013&oq=only+lovers+left+alive+2013&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQRzoHCAAQFBCHAjoECAAQQ1CJNViQOWCUOmgAcAF4AIABUYgB5QKSAQE1mAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwjJzIn36LTqAhXLl3IEHdW4Ab4Q4dUDCAw&uact=5',
