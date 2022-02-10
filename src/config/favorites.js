@@ -74,6 +74,11 @@ export default [
     title: 'TV Shows',
     items: [
       {
+        name: `Succession`,
+        link:
+          'https://www.google.com/search?q=succession+tv+show&rlz=1C5CHFA_enUS891US891&oq=succession+tv+show&aqs=chrome..69i57j46j0l6.3470j0j9&sourceid=chrome&ie=UTF-8',
+      },
+      {
         name: 'Better Call Saul',
         link:
           'https://www.google.com/search?q=better+call+saul&rlz=1C5CHFA_enUS891US891&oq=better+call+saul&aqs=chrome..69i57j46j35i39j0l5.1807j0j7&sourceid=chrome&ie=UTF-8',
@@ -87,11 +92,6 @@ export default [
         name: `Mr. Robot`,
         link:
           'https://www.google.com/search?safe=off&rlz=1C5CHFA_enUS891US891&sxsrf=ALeKk026o-cVh6bje4uNhA_7HxvPzcv7fg%3A1593907798287&ei=VhoBX6SFEZazytMPi-2MgAw&q=mr+robot+2015&oq=mr+robot+2015&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQRzoECAAQQzoHCAAQsQMQQzoFCAAQsQNQihpYsR5gpx9oAHABeACAAU2IAeECkgEBNZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwikiPyg6bTqAhWWmXIEHYs2A8AQ4dUDCAw&uact=5',
-      },
-      {
-        name: `Succession`,
-        link:
-          'https://www.google.com/search?q=succession+tv+show&rlz=1C5CHFA_enUS891US891&oq=succession+tv+show&aqs=chrome..69i57j46j0l6.3470j0j9&sourceid=chrome&ie=UTF-8',
       },
     ],
     icon: BsDisplay,
