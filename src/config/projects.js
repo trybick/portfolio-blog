@@ -1,19 +1,19 @@
 export default [
   {
-    name: 'Gif Convert',
-    framework: 'Electron & React',
-    description: 'Browser and desktop app to convert video to GIF.',
-    year: '2021',
-    liveLink: 'https://gifconvert.com/',
-    githubLink: 'https://github.com/trybick/gifconvert',
-  },
-  {
     name: 'TV Minder',
     framework: 'React & Express',
     description: 'Full-stack application to track TV show schedules.',
     year: '2020',
     liveLink: 'https://tv-minder.com/',
     githubLink: 'https://github.com/trybick/tv-minder',
+  },
+  {
+    name: 'GIF Convert',
+    framework: 'Electron & React',
+    description: 'Browser and desktop app to convert video to GIF.',
+    year: '2021',
+    liveLink: 'https://gifconvert.com/',
+    githubLink: 'https://github.com/trybick/gifconvert',
   },
   {
     name: 'Trance Tuner',
@@ -46,13 +46,5 @@ export default [
     year: '2019',
     liveLink: 'https://www.npmjs.com/package/slack-location-manager',
     githubLink: 'https://github.com/trybick/slack-location-manager',
-  },
-  {
-    name: 'Sick Picks',
-    framework: 'React & Node.js',
-    description: `A compilation of recommendations from the hosts of a web development podcast.`,
-    year: '2018',
-    liveLink: 'https://sickpicks.netlify.com/',
-    githubLink: 'https://github.com/trybick/sick-picks-scraper',
   },
 ];
