@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ProjectCard from '../components/ProjectCard';
 import projectsConfig from '../config/projects';
+import { Link } from 'gatsby';
 
 const Content = styled.div`
   margin: 0 auto;
@@ -17,7 +18,7 @@ const ProjectGroupContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 8fr;
   gap: 1.2rem;
-  margin: 40px 0;
+  margin: 40px 0 50px;
 
   @media screen and (max-width: 580px) {
     grid-template-columns: repeat(1, 1fr);
@@ -35,6 +36,7 @@ const PortfolioPage = () => {
             <ProjectCard key={project.name} project={project} />
           ))}
         </ProjectGroupContainer>
+        <Link to="/privacy/minimal-meditation">View Privacy Policy for Minimal Meditation</Link>
       </Content>
     </Layout>
   );
