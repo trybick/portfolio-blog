@@ -39,8 +39,8 @@ const PortfolioPage = () => {
         </ProjectGroupContainer>
 
         <Flex flexDir="column">
-          <Link to="/privacy/minimal-meditation">View Privacy Policy for Minimal Meditation</Link>
-          <Link to="/privacy/chinese-flip">View Privacy Policy for Chinese Flip</Link>
+          <Link to="/privacy/minimal-meditation">Privacy Policy for Minimal Meditation</Link>
+          <Link to="/privacy/chinese-flip">Privacy Policy for Chinese Flip</Link>
         </Flex>
       </Content>
     </Layout>
