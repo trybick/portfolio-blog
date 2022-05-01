@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { Flex } from '@chakra-ui/core';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -37,11 +35,6 @@ const PortfolioPage = () => {
             <ProjectCard key={project.name} project={project} />
           ))}
         </ProjectGroupContainer>
-
-        <Flex flexDir="column">
-          <Link to="/privacy/minimal-meditation">Privacy Policy for Minimal Meditation</Link>
-          <Link to="/privacy/chinese-flip">Privacy Policy for Chinese Flip</Link>
-        </Flex>
       </Content>
     </Layout>
   );
