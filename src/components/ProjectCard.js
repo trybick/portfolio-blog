@@ -80,6 +80,7 @@ const ProjectCard = ({ project: { name, description, githubLink, liveLinks, mobi
                 iconText="View Site"
                 link={liveLink}
                 popoverWidth="84px"
+                key={liveLink}
               />
             ))
           : mobileLinks.map(({ platform, link }) => (
@@ -90,6 +91,7 @@ const ProjectCard = ({ project: { name, description, githubLink, liveLinks, mobi
                 iconText={platform === 'ios' ? 'View App Store' : 'View Play Store'}
                 link={link}
                 popoverWidth="125px"
+                key={link}
               />
             ))}
         <IconWithPopover
