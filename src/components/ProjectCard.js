@@ -1,30 +1,21 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Box, Popover, PopoverTrigger, PopoverContent } from '@chakra-ui/core';
-import { FaGithub, FaGlobeAmericas } from 'react-icons/fa';
+import { FaGithub, FaGlobeAmericas, FaAppStoreIos, FaGooglePlay } from 'react-icons/fa';
 
 const Card = styled.div`
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
   padding: 0.85rem;
   min-width: 190px;
-  min-height: 150px;
   height: 100%;
   position: relative;
-
-  @media screen and (max-width: 580px) {
-    min-height: 130px;
-  }
-
-  @media screen and (max-width: 450px) {
-    min-height: 160px;
-  }
 `;
 
 const TopRow = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 `;
 
 const Title = styled.h4`
@@ -46,30 +37,11 @@ const Icons = styled.div`
     }
   }
 `;
+
 const Description = styled.p`
   font-size: 0.9rem;
   line-height: 21px;
-  margin-bottom: 1.2rem;
-`;
-
-const Year = styled.p`
-  font-size: 0.8rem;
-  margin: 0;
-  font-weight: 600;
-
-  position: absolute;
-  bottom: 0.52rem;
-  left: 0.85rem;
-`;
-
-const Framework = styled.p`
-  font-size: 0.8rem;
-  margin: 0;
-  font-style: italic;
-
-  position: absolute;
-  bottom: 0.52rem;
-  right: 0.85rem;
+  margin-bottom: 1.1rem;
 `;
 
 const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
@@ -87,6 +59,7 @@ const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
       fontSize="14px"
       fontWeight="bold"
       height="34px"
+      paddingX="6px"
       width={popoverWidth}
       zIndex={4}
     >
@@ -95,32 +68,40 @@ const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
   </Popover>
 );
 
-const ProjectCard = ({ project: { name, description, year, framework, githubLink, liveLink } }) => (
+const ProjectCard = ({ project: { name, description, githubLink, liveLinks, mobileLinks } }) => (
   <Card key={name}>
     <TopRow>
       <Title>{name}</Title>
       <Icons>
+        {liveLinks
+          ? liveLinks.map(liveLink => (
+              <IconWithPopover
+                icon={<FaGlobeAmericas size="1.05rem" />}
+                iconText="View Site"
+                link={liveLink}
+                popoverWidth="84px"
+              />
+            ))
+          : mobileLinks.map(({ platform, link }) => (
+              <IconWithPopover
+                icon={
+                  platform === 'ios' ? <FaAppStoreIos size="1rem" /> : <FaGooglePlay size="1rem" />
+                }
+                iconText={platform === 'ios' ? 'View App Store' : 'View Play Store'}
+                link={link}
+                popoverWidth="125px"
+              />
+            ))}
         <IconWithPopover
           icon={<FaGithub size="1.05rem" />}
-          iconText="Check repository"
+          iconText="View Repo"
           link={githubLink}
-          popoverWidth="120px"
-        />
-        <IconWithPopover
-          icon={<FaGlobeAmericas size="1.05rem" />}
-          iconText="See project"
-          link={liveLink}
-          popoverWidth="83px"
+          popoverWidth="92px"
         />
       </Icons>
     </TopRow>
 
     <Description>{description}</Description>
-
-    <div>
-      <Year>{year}</Year>
-      <Framework>{framework}</Framework>
-    </div>
   </Card>
 );
 
