@@ -17,11 +17,11 @@
     "start": "gatsby develop -o -p 8001"
   },
   "dependencies": {
-    "@chakra-ui/core": "^0.8.0",
-    "@emotion/core": "^11.0.0",
+    "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@types/react-helmet": "^6.1.6",
+    "framer-motion": "^9.0.1",
     "gatsby": "^5.5.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-emotion": "^8.5.0",

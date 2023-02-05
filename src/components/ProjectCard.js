@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Box, Popover, PopoverTrigger, PopoverContent } from '@chakra-ui/core';
+import { Box, Popover, PopoverTrigger, PopoverContent } from '@chakra-ui/react';
 import { FaGithub, FaGlobeAmericas, FaAppStoreIos, FaGooglePlay } from 'react-icons/fa';
 
 const Card = styled.div`
@@ -76,7 +76,7 @@ const ProjectCard = ({ project: { name, description, githubLink, liveLinks, mobi
         {liveLinks
           ? liveLinks.map(liveLink => (
               <IconWithPopover
-                icon={<FaGlobeAmericas size="1.05rem" />}
+                icon={<FaGlobeAmericas boxSize="1.05rem" />}
                 iconText="View Site"
                 link={liveLink}
                 popoverWidth="84px"
@@ -86,7 +86,7 @@ const ProjectCard = ({ project: { name, description, githubLink, liveLinks, mobi
           : mobileLinks.map(({ platform, link }) => (
               <IconWithPopover
                 icon={
-                  platform === 'ios' ? <FaAppStoreIos size="1rem" /> : <FaGooglePlay size="1rem" />
+                  platform === 'ios' ? <FaAppStoreIos boxSize="1rem" /> : <FaGooglePlay boxSize="1rem" />
                 }
                 iconText={platform === 'ios' ? 'View App Store' : 'View Play Store'}
                 link={link}
@@ -95,7 +95,7 @@ const ProjectCard = ({ project: { name, description, githubLink, liveLinks, mobi
               />
             ))}
         <IconWithPopover
-          icon={<FaGithub size="1.05rem" />}
+          icon={<FaGithub boxSize="1.05rem" />}
           iconText="View Repo"
           link={githubLink}
           popoverWidth="92px"

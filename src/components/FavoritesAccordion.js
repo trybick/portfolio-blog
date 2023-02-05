@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import {
   Accordion,
   AccordionItem,
-  AccordionHeader,
+  AccordionButton,
   AccordionPanel,
   AccordionIcon,
   Box,
@@ -11,7 +11,7 @@ import {
   List,
   ListItem,
   ListIcon,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import favorites from '../config/favorites';
 
 const FavoritesTitle = styled.h4`
@@ -38,7 +38,7 @@ const FavoritesAccordion = () => (
       <Accordion allowToggle defaultIndex={-1}>
         {favorites.map(category => (
           <AccordionItem key={category.title}>
-            <AccordionHeader
+            <AccordionButton
               backgroundColor="white"
               borderColor="rgb(226, 232, 240)"
               borderRightWidth="0"
@@ -50,16 +50,16 @@ const FavoritesAccordion = () => (
               _focus={{ boxShadow: '0' }}
             >
               <Box flex="1" textAlign="left">
-                <Box as={category.icon} size="15px" verticalAlign="middle" />
+                <Box as={category.icon} boxSize="15px" verticalAlign="middle" />
                 <CategoryTitle>{category.title}</CategoryTitle>
               </Box>
               <AccordionIcon />
-            </AccordionHeader>
+            </AccordionButton>
             <AccordionPanel pb={0} pt={2} pl={0}>
               <List spacing={2}>
                 {category.items.map(item => (
                   <ListItem key={item.name} fontSize="16px">
-                    <ListIcon icon="arrow-forward" size="16px" />
+                    <ListIcon icon="arrow-forward" boxSize="16px" />
                     {category.title === 'Quotes' ? (
                       item.name
                     ) : (

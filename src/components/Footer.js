@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Box } from '@chakra-ui/core';
+import { Box } from '@chakra-ui/react';
 import { DiReact } from 'react-icons/di';
 
 const FooterContainer = styled.footer`
@@ -65,7 +65,7 @@ const Footer = () => (
     </TopRow>
 
     <FooterRow>
-      <Box as={DiReact} size="24.5px" verticalAlign="middle" />
+      <Box as={DiReact} boxSize="24.5px" verticalAlign="middle" />
       <CityContainer>Boston, MA {new Date().getFullYear()}</CityContainer>
     </FooterRow>
   </FooterContainer>
