@@ -68,9 +68,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: process.env.GA_ID || 'none', // netlify env variable
+        trackingIds: ['G-7XR54VB463'],
       },
     },
   ],
