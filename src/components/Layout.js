@@ -1,5 +1,5 @@
 import React from 'react';
-import { css, Global } from '@emotion/core';
+import { css, Global } from '@emotion/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import Header from './Header';
