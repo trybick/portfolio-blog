@@ -18,6 +18,10 @@ const Layout = ({ children }) => (
     <ChakraProvider>
       <Global
         styles={css`
+          body {
+            font-family: Nunito !important;
+          }
+
           h1::selection,
           h2::selection,
           h3::selection,

@@ -23,6 +23,7 @@
     "framer-motion": "^9.0.1",
     "gatsby": "^5.5.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-emotion": "^8.5.0",
     "gatsby-plugin-google-gtag": "^5.5.0",
     "gatsby-plugin-manifest": "^5.5.0",
@@ -41,8 +42,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
-    "react-spring": "^9.6.1",
-    "typeface-nunito": "1.1.13"
+    "react-spring": "^9.6.1"
   },
   "devDependencies": {
     "prettier": "^2.8.3"

@@ -602,3 +602,6 @@ pre tt:after {
   content: '';
 }
 
+body {
+  font-family: Nunito !important;
+}
