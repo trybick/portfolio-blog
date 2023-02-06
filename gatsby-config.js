@@ -70,7 +70,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GA_ID || 'none', // netlify env variable
+        trackingId: 'G-7XR54VB463',
       },
     },
   ],
