@@ -7,20 +7,18 @@ module.exports = {
     image: 'screenshot-portfolio.png',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-omni-font-loader`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
-        enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-        web: [
+        fonts: [
           {
-            name: `Nunito`,
-            file: `https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap`,
+            family: 'Nunito',
+            weights: ['400', '700'],
           },
         ],
       },
     },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,7 +35,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

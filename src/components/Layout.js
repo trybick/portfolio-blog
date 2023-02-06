@@ -4,7 +4,6 @@ import { ChakraProvider } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import Header from './Header';
 import Footer from './Footer';
-import '../style/reset.css';
 
 const Content = styled.div`
   margin: 0 auto;
@@ -18,9 +17,9 @@ const Layout = ({ children }) => (
     <ChakraProvider>
       <Global
         styles={css`
-          body {
+          /* body {
             font-family: Nunito !important;
-          }
+          } */
 
           h1::selection,
           h2::selection,
