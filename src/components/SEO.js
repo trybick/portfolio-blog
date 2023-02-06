@@ -91,7 +91,13 @@ function SEO({ description, lang = 'en', meta = [], keywords = [], title = '' })
             : []
         )
         .concat(meta)}
-    />
+    >
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "a08f649fe2fd49b6a62fe988ab374f13"}'
+      ></script>
+    </Helmet>
   );
 }
 
