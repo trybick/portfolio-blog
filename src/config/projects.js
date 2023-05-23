@@ -9,10 +9,10 @@ export default [
     name: 'Chinese Flip',
     description: 'Android and iOS Chinese learning app.',
     mobileLinks: [
-      {
-        platform: 'ios',
-        link: 'https://apps.apple.com/us/app/chinese-flip-language/id1620183004',
-      },
+      // {
+      //   platform: 'ios',
+      //   link: 'https://apps.apple.com/us/app/chinese-flip-language/id1620183004',
+      // },
       {
         platform: 'android',
         link: 'https://play.google.com/store/apps/details?id=com.trybicki.chineseflip',
@@ -24,7 +24,10 @@ export default [
     name: 'Minimal Meditation',
     description: 'Android and iOS meditation timer.',
     mobileLinks: [
-      { platform: 'ios', link: 'https://apps.apple.com/us/app/minimal-meditation/id1619968801' },
+      // { 
+        // platform: 'ios',
+        //  link: 'https://apps.apple.com/us/app/minimal-meditation/id1619968801' 
+      // },
       {
         platform: 'android',
         link: 'https://play.google.com/store/apps/details?id=com.trybicki.minimalmeditation',
@@ -35,7 +38,7 @@ export default [
   {
     name: 'GIF Convert',
     description: 'Browser and desktop GIF converter.',
-    liveLinks: ['https://gifconvert.com/'],
+    liveLinks: ['https://convertgif.netlify.app'],
     githubLink: 'https://github.com/trybick/gifconvert',
   },
   {
@@ -53,7 +56,7 @@ export default [
   {
     name: 'Issue Collab',
     description: `Search tool for GitHub Issues.`,
-    liveLinks: ['https://issue-collab.dev/'],
+    liveLinks: ['https://issue-collab.netlify.app'],
     githubLink: 'https://github.com/trybick/issue-collab',
   },
   {
