@@ -2,14 +2,15 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Box, Popover, PopoverTrigger, PopoverContent } from '@chakra-ui/core';
 import { FaGithub, FaGlobeAmericas, FaAppStoreIos, FaGooglePlay } from 'react-icons/fa';
+import theme from '../style/theme';
 
 const Card = styled.div`
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
   padding: 0.85rem;
   min-width: 190px;
   height: 100%;
   position: relative;
+  border: 1px solid ${theme.colors.gray};
 `;
 
 const TopRow = styled.div`
@@ -42,6 +43,7 @@ const Description = styled.p`
   font-size: 0.9rem;
   line-height: 21px;
   margin-bottom: 1.1rem;
+  color: ${theme.colors.gray};
 `;
 
 const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (

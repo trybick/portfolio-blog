@@ -13,6 +13,7 @@ import {
   ListIcon,
 } from '@chakra-ui/core';
 import favorites from '../config/favorites';
+import theme from '../style/theme';
 
 const FavoritesTitle = styled.h4`
   text-align: center;
@@ -27,20 +28,14 @@ const CategoryTitle = styled.span`
 const FavoritesAccordion = () => (
   <>
     <FavoritesTitle>Some of my favorite things!</FavoritesTitle>
-    <Box
-      borderRadius=".25rem"
-      border="1px solid"
-      borderColor="rgb(226, 232, 240)"
-      padding=".75rem"
-      margin="0 auto 20px"
-      maxWidth="500px"
-    >
+    <Box borderRadius=".25rem" padding=".75rem" margin="0 auto 20px" maxWidth="500px">
       <Accordion allowToggle defaultIndex={-1}>
         {favorites.map(category => (
           <AccordionItem key={category.title}>
             <AccordionHeader
-              backgroundColor="white"
-              borderColor="rgb(226, 232, 240)"
+              cursor="pointer"
+              backgroundColor={theme.colors.background}
+              color={theme.colors.primary}
               borderRightWidth="0"
               borderLeftWidth="0"
               borderBottomWidth="0"

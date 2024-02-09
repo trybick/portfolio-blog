@@ -4,6 +4,7 @@ import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import theme from '../style/theme';
 
 const Content = styled.div`
   margin: 0 auto;
@@ -17,20 +18,21 @@ const PageTitle = styled.h1`
 
 const CreatedDate = styled.h5`
   display: inline;
-  color: #606060;
+  color: ${theme.colors.gray};
 `;
 
 const PostTitle = styled.h2`
-  background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
   background-size: 100% 0em;
   background-repeat: no-repeat;
   background-position: 0px 88%;
   font-size: 1.8rem;
   transition: background-size 0.25s ease-in 0s;
   margin: 0;
+  display: inline;
 
-  :hover {
-    background-size: 100% 88%;
+  &:hover {
+    background-color: ${theme.colors.highlight};
+    border-radius: 2px;
   }
 `;
 
@@ -40,7 +42,7 @@ const MidHeader = styled.div`
 
 const ReadingTime = styled.h5`
   display: inline;
-  color: #606060;
+  color: ${theme.colors.gray};
 `;
 
 const BlogPage = ({ data }) => {
@@ -59,20 +61,21 @@ const BlogPage = ({ data }) => {
           `}
         >
           <PostTitle>{node.frontmatter.title}</PostTitle>
-          <MidHeader>
-            <CreatedDate>{node.frontmatter.date}</CreatedDate>
-            <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
-          </MidHeader>
-          <p>{node.excerpt}</p>
         </Link>
+
+        <MidHeader>
+          <CreatedDate>{node.frontmatter.date}</CreatedDate>
+          <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
+        </MidHeader>
+        <p>{node.excerpt}</p>
       </div>
     ));
 
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="Articles" />
       <Content>
-        <PageTitle>Blog</PageTitle>
+        <PageTitle>Articles</PageTitle>
         {parsedMarkdown}
       </Content>
     </Layout>

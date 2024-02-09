@@ -4,6 +4,7 @@ import { ThemeProvider } from '@chakra-ui/core';
 import styled from '@emotion/styled';
 import Header from './Header';
 import Footer from './Footer';
+import theme from '../style/theme';
 import '../style/reset.css';
 
 const Content = styled.div`
@@ -26,7 +27,7 @@ const Layout = ({ children }) => (
           h6::selection,
           p::selection,
           a::selection {
-            background: #fffa96cc;
+            background: ${theme.colors.highlight};
           }
 
           :not(pre) > code[class*='language-'],
@@ -35,7 +36,22 @@ const Layout = ({ children }) => (
           }
 
           :not(pre) > code {
-            font-size: .9rem;
+            font-size: 0.9rem;
+          }
+
+          body {
+            background-color: ${theme.colors.background} !important;
+            color: ${theme.colors.primary} !important;
+          }
+
+          :any-link {
+            color: ${theme.colors.primary} !important;
+          }
+          :-webkit-any-link {
+            color: ${theme.colors.primary} !important;
+          }
+          :-moz-any-link {
+            color: ${theme.colors.primary} !important;
           }
         `}
       />

@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import theme from '../style/theme';
 
 const Content = styled.div`
   margin: 0 auto;
@@ -12,7 +13,6 @@ const Content = styled.div`
 
 const PostTitle = styled.h1`
   display: inline;
-  background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
   background-size: 100% 0.2em;
   background-repeat: no-repeat;
   background-position: 0px 88%;
@@ -22,7 +22,7 @@ const PostTitle = styled.h1`
 
 const Date = styled.h3`
   margin-top: 10px;
-  color: #606060;
+  color: ${theme.colors.gray};
 `;
 
 const MarkdownContent = styled.div`
@@ -38,7 +38,7 @@ const MarkdownContent = styled.div`
 
     :hover {
       position: relative;
-      background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
+      background-color: ${theme.colors.highlight};
       background-size: 100% 0.2em;
       background-repeat: no-repeat;
       background-position: 0px 98%;

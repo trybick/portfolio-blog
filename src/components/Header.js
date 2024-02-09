@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
+import theme from '../style/theme';
 
 const Content = styled.div`
   max-width: 860px;
@@ -9,14 +10,12 @@ const Content = styled.div`
 `;
 
 const SiteHeader = styled.header`
-  background: transparent;
   display: flex;
   align-content: center;
   justify-content: center;
 `;
 
 const NavLink = styled(Link)`
-  color: black;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -30,7 +29,7 @@ const NavLink = styled(Link)`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: ${theme.colors.primary};
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -51,8 +50,8 @@ const Header = () => (
       <p>
         <HomeLink to="/">Home</HomeLink>
         <NavLink to="/about">About</NavLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <NavLink to="/portfolio">Portfolio</NavLink>
+        <NavLink to="/blog">Articles</NavLink>
+        <NavLink to="/portfolio">Projects</NavLink>
       </p>
     </Content>
   </SiteHeader>
