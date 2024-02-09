@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
+import theme from '../style/theme';
 
 const Content = styled.div`
   max-width: 860px;
@@ -28,6 +29,7 @@ const NavLink = styled(Link)`
     height: 2px;
     bottom: 0;
     left: 0;
+    background-color: ${theme.colors.primary};
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Box } from '@chakra-ui/core';
 import { DiReact } from 'react-icons/di';
+import theme from '../style/theme';
 
 const FooterContainer = styled.footer`
   padding-bottom: 30px;
@@ -31,7 +32,7 @@ const ContactLink = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: ${theme.colors.primary};
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
