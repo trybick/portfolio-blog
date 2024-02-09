@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import theme from '../style/theme';
 
 const Content = styled.div`
   margin: 0 auto;
@@ -22,7 +23,7 @@ const PostTitle = styled.h1`
 
 const Date = styled.h3`
   margin-top: 10px;
-  color: #606060;
+  color: ${theme.colors.gray};
 `;
 
 const MarkdownContent = styled.div`
