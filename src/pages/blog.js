@@ -32,6 +32,7 @@ const PostTitle = styled.h2`
 
   &:hover {
     background-color: ${theme.colors.highlight};
+    border-radius: 2px;
   }
 `;
 
@@ -60,12 +61,13 @@ const BlogPage = ({ data }) => {
           `}
         >
           <PostTitle>{node.frontmatter.title}</PostTitle>
-          <MidHeader>
-            <CreatedDate>{node.frontmatter.date}</CreatedDate>
-            <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
-          </MidHeader>
-          <p>{node.excerpt}</p>
         </Link>
+
+        <MidHeader>
+          <CreatedDate>{node.frontmatter.date}</CreatedDate>
+          <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
+        </MidHeader>
+        <p>{node.excerpt}</p>
       </div>
     ));
 
