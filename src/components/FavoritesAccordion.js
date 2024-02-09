@@ -29,18 +29,19 @@ const FavoritesAccordion = () => (
     <FavoritesTitle>Some of my favorite things!</FavoritesTitle>
     <Box
       borderRadius=".25rem"
-      border="1px solid"
+      // border="1px solid"
       borderColor="rgb(226, 232, 240)"
       padding=".75rem"
       margin="0 auto 20px"
       maxWidth="500px"
+      id="accordion-wrapper"
     >
       <Accordion allowToggle defaultIndex={-1}>
         {favorites.map(category => (
           <AccordionItem key={category.title}>
             <AccordionHeader
-              backgroundColor="white"
-              borderColor="rgb(226, 232, 240)"
+              // backgroundColor="white"
+              // borderColor="rgb(226, 232, 240)"
               borderRightWidth="0"
               borderLeftWidth="0"
               borderBottomWidth="0"
