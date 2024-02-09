@@ -44,7 +44,13 @@ const Layout = ({ children }) => (
             color: ${theme.colors.primary} !important;
           }
 
-          a:-webkit-any-link {
+          :any-link {
+            color: ${theme.colors.primary} !important;
+          }
+          :-webkit-any-link {
+            color: ${theme.colors.primary} !important;
+          }
+          :-moz-any-link {
             color: ${theme.colors.primary} !important;
           }
         `}

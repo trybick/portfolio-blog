@@ -28,13 +28,7 @@ const CategoryTitle = styled.span`
 const FavoritesAccordion = () => (
   <>
     <FavoritesTitle>Some of my favorite things!</FavoritesTitle>
-    <Box
-      borderRadius=".25rem"
-      padding=".75rem"
-      margin="0 auto 20px"
-      maxWidth="500px"
-      id="accordion-wrapper"
-    >
+    <Box borderRadius=".25rem" padding=".75rem" margin="0 auto 20px" maxWidth="500px">
       <Accordion allowToggle defaultIndex={-1}>
         {favorites.map(category => (
           <AccordionItem key={category.title}>
