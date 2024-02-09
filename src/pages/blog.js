@@ -70,9 +70,9 @@ const BlogPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="Articles" />
       <Content>
-        <PageTitle>Blog</PageTitle>
+        <PageTitle>Articles</PageTitle>
         {parsedMarkdown}
       </Content>
     </Layout>

@@ -27,9 +27,9 @@ const ProjectGroupContainer = styled.div`
 const PortfolioPage = () => {
   return (
     <Layout>
-      <SEO title="Portfolio" />
+      <SEO title="Projects" />
       <Content>
-        <h1>Portfolio</h1>
+        <h1>Projects</h1>
         <ProjectGroupContainer>
           {projectsConfig.map(project => (
             <ProjectCard key={project.name} project={project} />
