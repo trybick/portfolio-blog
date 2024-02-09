@@ -64,10 +64,10 @@ const Footer = () => (
       </ContactLink>
     </TopRow>
 
-    <FooterRow>
+    {/* <FooterRow>
       <Box as={DiReact} size="24.5px" verticalAlign="middle" />
-      <CityContainer>Boston, MA {new Date().getFullYear()}</CityContainer>
-    </FooterRow>
+      <CityContainer>Boston {new Date().getFullYear()}</CityContainer>
+    </FooterRow> */}
   </FooterContainer>
 );
 
