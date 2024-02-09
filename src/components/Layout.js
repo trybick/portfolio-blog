@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
           h6::selection,
           p::selection,
           a::selection {
-            background: #fffa96cc;
+            background: ${theme.colors.highlight};
           }
 
           :not(pre) > code[class*='language-'],
@@ -39,7 +39,7 @@ const Layout = ({ children }) => (
             font-size: 0.9rem;
           }
 
-          body:not(#accordion-wrapper) {
+          body {
             background-color: ${theme.colors.background} !important;
             color: ${theme.colors.primary} !important;
           }

@@ -39,7 +39,6 @@ const FavoritesAccordion = () => (
         {favorites.map(category => (
           <AccordionItem key={category.title}>
             <AccordionHeader
-              _hover={{ bg: 'yellow' }}
               cursor="pointer"
               backgroundColor={theme.colors.background}
               color={theme.colors.primary}

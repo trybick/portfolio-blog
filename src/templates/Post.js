@@ -13,7 +13,6 @@ const Content = styled.div`
 
 const PostTitle = styled.h1`
   display: inline;
-  background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
   background-size: 100% 0.2em;
   background-repeat: no-repeat;
   background-position: 0px 88%;
@@ -39,7 +38,7 @@ const MarkdownContent = styled.div`
 
     :hover {
       position: relative;
-      background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
+      background-color: ${theme.colors.highlight};
       background-size: 100% 0.2em;
       background-repeat: no-repeat;
       background-position: 0px 98%;

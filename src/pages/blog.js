@@ -22,16 +22,16 @@ const CreatedDate = styled.h5`
 `;
 
 const PostTitle = styled.h2`
-  background-image: linear-gradient(rgba(255, 250, 150, 0.8), rgba(255, 250, 150, 0.8));
   background-size: 100% 0em;
   background-repeat: no-repeat;
   background-position: 0px 88%;
   font-size: 1.8rem;
   transition: background-size 0.25s ease-in 0s;
   margin: 0;
+  display: inline;
 
-  :hover {
-    background-size: 100% 88%;
+  &:hover {
+    background-color: ${theme.colors.highlight};
   }
 `;
 
