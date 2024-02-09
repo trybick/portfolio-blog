@@ -27,7 +27,6 @@ const ViewResumeButton = () => (
         cursor="pointer"
         leftIcon={GrDocumentPdf}
         size="sm"
-        variant="outline"
         backgroundColor={theme.colors.primary}
         color={theme.colors.background}
       >
