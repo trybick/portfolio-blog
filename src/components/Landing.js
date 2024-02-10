@@ -18,8 +18,7 @@ const Content = styled.div`
 const Description = styled.p`
   font-size: 1.4rem;
   line-height: 26px;
-  max-width: 220px;
-  margin: 8px auto;
+  margin: 12px auto;
 `;
 
 const NameHeader = styled.h1`
