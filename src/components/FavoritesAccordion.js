@@ -17,7 +17,7 @@ import theme from '../style/theme';
 
 const FavoritesTitle = styled.h4`
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0 12px;
 `;
 
 const CategoryTitle = styled.span`
@@ -27,7 +27,7 @@ const CategoryTitle = styled.span`
 
 const FavoritesAccordion = () => (
   <>
-    <FavoritesTitle>Some of my favorite things!</FavoritesTitle>
+    <FavoritesTitle>Some of my interests:</FavoritesTitle>
     <Box borderRadius=".25rem" padding=".75rem" margin="0 auto 20px" maxWidth="500px">
       <Accordion allowToggle defaultIndex={-1}>
         {favorites.map(category => (

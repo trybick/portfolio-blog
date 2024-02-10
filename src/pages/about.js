@@ -24,10 +24,15 @@ const AboutPage = () => {
         <ViewResumeButton />
 
         <p>
-          Hey there, I'm Tim and I'm a software developer specializing in React.js and JavaScript. I
-          enjoy finding fast and simple ways of doing things. My other passions are playing music,
-          running, and building computers.
+          I grew up in the 90s and dabbled with programming in the MySpace era but didn’t fully get
+          into coding until I attented a web dev bootcamp in 2018. Since then I feel like I found my
+          true calling.
         </p>
+        <p>
+          I enjoy the web development ecosystem because of the endless possibilities between web,
+          mobile, and desktop apps.
+        </p>
+        <p>I care about creating things that are useful to people.</p>
 
         <FavoritesAccordion />
       </Content>
