@@ -16,7 +16,7 @@ const Content = styled.div`
 
 const Layout = ({ children }) => (
   <>
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <Global
         styles={css`
           h1::selection,
