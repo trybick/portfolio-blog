@@ -50,23 +50,21 @@ const MarkdownContent = styled.div`
   }
 `;
 
-const Post = ({ data: { markdownRemark: post } }) => {
-  return (
-    <Layout>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <Content>
-        <PostTitle>{post.frontmatter.title}</PostTitle>
-        <Date>
-          {post.frontmatter.date} - {post.timeToRead}
-        </Date>
-        <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
-      </Content>
-    </Layout>
-  );
-};
+const Post = ({ data: { markdownRemark: post } }) => (
+  <Layout>
+    <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+    />
+    <Content>
+      <PostTitle>{post.frontmatter.title}</PostTitle>
+      <Date>
+        {post.frontmatter.date} - {post.timeToRead}
+      </Date>
+      <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
+    </Content>
+  </Layout>
+);
 
 export const pageQuery = graphql`
   query ($path: String!) {
