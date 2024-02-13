@@ -2,7 +2,7 @@
 title: 'Publishing to npm using GitHub Actions'
 date: '2020-06-28'
 draft: false
-path: '/blog/github-actions'
+path: '/articles/github-actions'
 ---
 
 GitHub Actions present a great way to automate tasks. In this case, we are setting up a way to update a React component library, [zati](https://github.com/f1v/zati), on the npm registry. The end resulting behavior is the following:

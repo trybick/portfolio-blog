@@ -2,7 +2,7 @@
 title: 'Best underrated developer Chrome extensions'
 date: '2018-10-22'
 draft: false
-path: '/blog/chrome-extensions'
+path: '/articles/chrome-extensions'
 ---
 
 You might have heard of extensions like <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en" target="_blank">JSON Formatter</a>, <a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en" target="_blank">WhatFont</a>, and <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en" target="_blank">ColorZilla</a>. Let's look at some other ones that might be able to save you time.

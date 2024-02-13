@@ -2,7 +2,7 @@
 title: 'Free T-shirts during Hacktoberfest'
 date: '2018-10-02'
 draft: false
-path: '/blog/hacktoberfest'
+path: '/articles/hacktoberfest'
 ---
 
 DigitalOcean is sponsoring [Hacktoberfest](https://hacktoberfest.digitalocean.com/) for the fifth year in a row. The first 50,000 people to sign up and make five pull requests in the month of October receive a free t-shirt!

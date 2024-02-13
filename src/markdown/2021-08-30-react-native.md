@@ -2,7 +2,7 @@
 title: 'As a React.js developer, what is React Native like?'
 date: '2021-08-30'
 draft: false
-path: '/blog/react-native-vs-react-js'
+path: '/articles/react-native-vs-react-js'
 ---
 
 If you are a React developer you may have considered using React Native, one of the most popular frameworks for creating cross-platform mobile apps. Let's look at how the developer experience for React Native compares to React.js.

@@ -2,7 +2,7 @@
 title: 'Saving a local file with Node.js'
 date: '2020-01-05'
 draft: false
-path: '/blog/save-files'
+path: '/articles/save-files'
 ---
 
 Find out how to store a JSON file on a user's machine and retrieve it later using Node.js.

@@ -2,7 +2,7 @@
 title: 'Favorite VSCode Extensions'
 date: '2020-03-14'
 draft: false
-path: '/blog/favorite-vscode-extensions'
+path: '/articles/favorite-vscode-extensions'
 ---
 
 VSCode is the most popular code editor currently, thanks in part to its Marketplace for extensions. Most of the following list is universally applicable, with some specifically targeting Front End web development.

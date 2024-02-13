@@ -2,7 +2,7 @@
 title: 'Blaze through commits with git aliases'
 date: '2018-10-19'
 draft: false
-path: '/blog/git-aliases'
+path: '/articles/git-aliases'
 ---
 
 When you're forced to stop and make a commit after reaching a milestone, sometimes using Git can feel like a crutch rather than a tool. If you sharpen your commit tool to the point where committing is a breeze, you can have more organized code with less chance of losing work.
@@ -17,20 +17,22 @@ Here's an example of a quick commit with aliases for `git status`, `git add .`, 
 </p>
 
 **Explanation**:
-* `git status` becomes `gs`
-* `git add .` becomes `gaa`
-* `git commit -m` becomes `gcm`
+
+- `git status` becomes `gs`
+- `git add .` becomes `gaa`
+- `git commit -m` becomes `gcm`
 
 **Other examples**:
-* `git checkout -b` becomes `gcob`
-* `git commit --amend --no-edit` becomes `gcane`
-* `git log --oneline --decorate` becomes `gll`
+
+- `git checkout -b` becomes `gcob`
+- `git commit --amend --no-edit` becomes `gcane`
+- `git log --oneline --decorate` becomes `gll`
 
 You can also make shortcuts for any Git command or any other terminal command.
 
 ## How to Add Aliases
 
-*Simply add the following to your .bashrc file.*
+_Simply add the following to your .bashrc file._
 
 1. Navigate to your home directory `cd ~`.
 2. Enter `ls -a` and you should see a file called `.bashrc`. (or `.bash_profile` if you don't have `.bashrc`)
@@ -71,6 +73,6 @@ If you like to add more features and colors to terminal, check out [Bash-Git-Pro
 
 ### Additional Resources
 
-* [Jon Suh - Git Command-Line Shortcuts](https://jonsuh.com/blog/git-command-line-shortcuts/)
-* [Medium - Git on the Command Line — Improving the Experience](https://medium.com/ag-grid/git-on-the-command-line-improving-the-experience-5a604cb14cf6)
-* [Josh Staiger - .bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
+- [Jon Suh - Git Command-Line Shortcuts](https://jonsuh.com/articles/git-command-line-shortcuts/)
+- [Medium - Git on the Command Line — Improving the Experience](https://medium.com/ag-grid/git-on-the-command-line-improving-the-experience-5a604cb14cf6)
+- [Josh Staiger - .bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)

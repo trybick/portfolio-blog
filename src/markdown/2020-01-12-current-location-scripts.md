@@ -2,7 +2,7 @@
 title: 'How to find your current city using Bash or Node.js'
 date: '2020-01-12'
 draft: false
-path: '/blog/ip-location'
+path: '/articles/ip-location'
 ---
 
 We look at creating a script, using bash or Node.js, to calculate your current city using the [IPinfo](https://ipinfodb.com/) API (no sign-up required).

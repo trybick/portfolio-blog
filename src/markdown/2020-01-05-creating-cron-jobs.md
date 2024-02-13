@@ -2,7 +2,7 @@
 title: 'Creating a cron job with Node.js'
 date: '2020-01-05'
 draft: false
-path: '/blog/cron-jobs'
+path: '/articles/cron-jobs'
 ---
 
 The purpose is to create a script that can create a cronjob on a user's computer. There are many cron related libraries on npm, however [node-crontab](https://github.com/dachev/node-crontab) is the only one I found that can access the system cron jobs of a computer instead of relying on `setTimeout`.

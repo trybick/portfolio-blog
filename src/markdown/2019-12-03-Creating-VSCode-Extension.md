@@ -2,7 +2,7 @@
 title: 'Creating a VSCode extension'
 date: '2019-12-03'
 draft: false
-path: '/blog/create-vscode-extension'
+path: '/articles/create-vscode-extension'
 ---
 
 Get up and running in minutes with this concise guide.
