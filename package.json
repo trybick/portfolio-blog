@@ -19,7 +19,7 @@
     "clean": "gatsby clean",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint --fix --ext .js,.jsx .",
-    "start": "gatsby develop -o -p 8001"
+    "start": "yarn clean && gatsby develop -o -p 8001"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",

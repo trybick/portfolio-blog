@@ -40,6 +40,7 @@ const Layout = ({ children }) => (
           }
 
           body {
+            font-family: 'Nunito', 'Avenir', 'Helvetica', 'sans-serif';
             background-color: ${theme.colors.background} !important;
             color: ${theme.colors.primary} !important;
           }
