@@ -25,7 +25,7 @@ const ViewResumeButton = () => (
     <ResumeLink href={resumeHref} target="_blank" rel="noreferrer">
       <Button
         cursor="pointer"
-        leftIcon={GrDocumentPdf}
+        leftIcon={<GrDocumentPdf />}
         size="sm"
         backgroundColor={theme.colors.primary}
         color={theme.colors.background}
