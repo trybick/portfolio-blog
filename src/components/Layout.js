@@ -1,6 +1,6 @@
 import React from 'react';
-import { css, Global } from '@emotion/core';
-import { ThemeProvider } from '@chakra-ui/core';
+import { css, Global } from '@emotion/react';
+import { ChakraProvider } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import Header from './Header';
 import Footer from './Footer';
@@ -16,7 +16,7 @@ const Content = styled.div`
 
 const Layout = ({ children }) => (
   <>
-    <ThemeProvider>
+    <ChakraProvider>
       <Global
         styles={css`
           h1::selection,
@@ -60,7 +60,7 @@ const Layout = ({ children }) => (
         <main>{children}</main>
       </Content>
       <Footer />
-    </ThemeProvider>
+    </ChakraProvider>
   </>
 );
 

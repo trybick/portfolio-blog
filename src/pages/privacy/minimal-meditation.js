@@ -84,6 +84,7 @@ const MinimalMeditationPrviacyPage = () => {
           <p>
             Cookies are files with a small amount of data that are commonly used as anonymous unique
             identifiers. These are sent to your browser from the websites that you visit and are
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             stored on your device's internal memory.
           </p>
           <p>
