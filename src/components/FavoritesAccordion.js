@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import {
   Accordion,
   AccordionItem,
-  AccordionHeader,
+  AccordionButton,
   AccordionPanel,
   AccordionIcon,
   Box,
@@ -11,7 +11,8 @@ import {
   List,
   ListItem,
   ListIcon,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
+import { MdArrowForward } from 'react-icons/md';
 import favorites from '../config/favorites';
 import theme from '../style/theme';
 
@@ -32,7 +33,7 @@ const FavoritesAccordion = () => (
       <Accordion allowToggle defaultIndex={-1}>
         {favorites.map(category => (
           <AccordionItem key={category.title}>
-            <AccordionHeader
+            <AccordionButton
               cursor="pointer"
               backgroundColor={theme.colors.background}
               color={theme.colors.primary}
@@ -45,16 +46,21 @@ const FavoritesAccordion = () => (
               _focus={{ boxShadow: '0' }}
             >
               <Box flex="1" textAlign="left">
-                <Box as={category.icon} size="15px" verticalAlign="middle" />
+                <Box
+                  as={category.icon}
+                  w="15px"
+                  verticalAlign="middle"
+                  display="inline !important"
+                />
                 <CategoryTitle>{category.title}</CategoryTitle>
               </Box>
               <AccordionIcon />
-            </AccordionHeader>
+            </AccordionButton>
             <AccordionPanel pb={0} pt={2} pl={0}>
-              <List spacing={2}>
+              <List spacing={2} alignItems="center">
                 {category.items.map(item => (
                   <ListItem key={item.name} fontSize="16px">
-                    <ListIcon icon="arrow-forward" size="16px" />
+                    <ListIcon as={MdArrowForward} w="16px" />
                     {category.title === 'Quotes' ? (
                       item.name
                     ) : (

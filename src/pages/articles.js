@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -65,7 +65,7 @@ const BlogPage = ({ data }) => {
 
         <MidHeader>
           <CreatedDate>{node.frontmatter.date}</CreatedDate>
-          <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
+          <ReadingTime> - {node.timeToRead} min</ReadingTime>
         </MidHeader>
         <p>{node.excerpt}</p>
       </div>
@@ -107,10 +107,8 @@ export const query = graphql`
           }
           fields {
             slug
-            readingTime {
-              text
-            }
           }
+          timeToRead
           excerpt
         }
       }

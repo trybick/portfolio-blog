@@ -59,7 +59,7 @@ const Post = ({ data: { markdownRemark: post } }) => (
     <Content>
       <PostTitle>{post.frontmatter.title}</PostTitle>
       <Date>
-        {post.frontmatter.date} - {post.fields.readingTime.text}
+        {post.frontmatter.date} - {post.timeToRead} min
       </Date>
       <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
     </Content>
@@ -67,7 +67,7 @@ const Post = ({ data: { markdownRemark: post } }) => (
 );
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       excerpt(pruneLength: 160)
@@ -76,11 +76,7 @@ export const pageQuery = graphql`
         path
         title
       }
-      fields {
-        readingTime {
-          text
-        }
-      }
+      timeToRead
     }
   }
 `;
