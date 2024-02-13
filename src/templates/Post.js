@@ -59,7 +59,7 @@ const Post = ({ data: { markdownRemark: post } }) => (
     <Content>
       <PostTitle>{post.frontmatter.title}</PostTitle>
       <Date>
-        {post.frontmatter.date} - {post.timeToRead}
+        {post.frontmatter.date} - {post.timeToRead} min
       </Date>
       <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
     </Content>

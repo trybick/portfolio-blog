@@ -65,7 +65,7 @@ const BlogPage = ({ data }) => {
 
         <MidHeader>
           <CreatedDate>{node.frontmatter.date}</CreatedDate>
-          <ReadingTime> - {node.timeToRead}</ReadingTime>
+          <ReadingTime> - {node.timeToRead} min</ReadingTime>
         </MidHeader>
         <p>{node.excerpt}</p>
       </div>
