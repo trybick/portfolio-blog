@@ -4,6 +4,11 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
+import PageHead from '../components/PageHead';
+
+export function Head() {
+  return <PageHead title="Articles" />;
+}
 
 const Content = styled.div`
   margin: 0 auto;

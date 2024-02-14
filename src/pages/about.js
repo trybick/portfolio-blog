@@ -3,6 +3,11 @@ import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import ViewResumeButton from '../components/ViewResumeButton';
 import FavoritesAccordion from '../components/FavoritesAccordion';
+import PageHead from '../components/PageHead';
+
+export function Head() {
+  return <PageHead title="About" />;
+}
 
 const Content = styled.div`
   margin: 0 auto;

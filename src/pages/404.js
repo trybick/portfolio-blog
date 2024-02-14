@@ -1,5 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import PageHead from '../components/PageHead';
+
+export function Head() {
+  return <PageHead title="Not Found" />;
+}
 
 const NotFoundPage = () => (
   <Layout>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function PageHead({ description, lang = 'en', meta = [], keywords = [], title = '' }) {
+function PageHead({ title, description }) {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -22,6 +22,7 @@ function PageHead({ description, lang = 'en', meta = [], keywords = [], title = 
   return (
     <>
       <title>{staticTitle}</title>
+      {/* Title template example: "Tim Rybicki | Articles" */}
       <meta name="titleTemplate" content={`%s | ${title}`} />
       <meta name="name" content={staticTitle} />
       <meta name="description" content={metaDescription} />
@@ -40,7 +41,7 @@ function PageHead({ description, lang = 'en', meta = [], keywords = [], title = 
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={staticImage} />
 
-      <meta name="keywords" content={keywords.join(`, `)} />
+      <meta name="keywords" content={'tim rybicki, software developer, portfolio, article'} />
 
       <script
         defer

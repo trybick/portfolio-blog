@@ -3,6 +3,11 @@ import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import ProjectCard from '../components/ProjectCard';
 import projectsConfig from '../config/projects';
+import PageHead from '../components/PageHead';
+
+export function Head() {
+  return <PageHead title="Projects" />;
+}
 
 const Content = styled.div`
   margin: 0 auto;
