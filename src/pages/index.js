@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import PageHead from '../components/PageHead';
 
 export function Head() {
-  return <PageHead title="Home" />;
+  return <PageHead title="Tim Rybicki | Home" />;
 }
 
 const IndexPage = () => (

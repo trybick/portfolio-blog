@@ -6,7 +6,7 @@ import FavoritesAccordion from '../components/FavoritesAccordion';
 import PageHead from '../components/PageHead';
 
 export function Head() {
-  return <PageHead title="About" />;
+  return <PageHead title="Tim Rybicki | About" />;
 }
 
 const Content = styled.div`

@@ -4,7 +4,7 @@ import Layout from '../../components/Layout';
 import PageHead from '../../components/PageHead';
 
 export function Head() {
-  return <PageHead title="Privacy Policy" />;
+  return <PageHead title="Tim Rybicki | Privacy Policy" />;
 }
 
 const Content = styled.div`

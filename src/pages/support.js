@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import PageHead from '../components/PageHead';
 
 export function Head() {
-  return <PageHead title="Support" />;
+  return <PageHead title="Tim Rybicki | Support" />;
 }
 
 const Content = styled.div`

@@ -21,9 +21,8 @@ function PageHead({ title, description }) {
 
   return (
     <>
-      <title>{staticTitle}</title>
-      {/* Title template example: "Tim Rybicki | Articles" */}
-      <meta name="titleTemplate" content={`%s | ${title}`} />
+      <title>{title || staticTitle}</title>
+      <meta name="title" content={title || staticTitle} />
       <meta name="name" content={staticTitle} />
       <meta name="description" content={metaDescription} />
       <meta name="image" content={staticImage} />
@@ -31,13 +30,13 @@ function PageHead({ title, description }) {
       {/* Facebook */}
       <meta name="og:url" content={`https://timr.dev`} />
       <meta name="og:type" content="website" />
-      <meta name="og:title" content={staticTitle} />
+      <meta name="og:title" content={title || staticTitle} />
       <meta name="og:description" content={metaDescription} />
       <meta name="og:image" content={staticImage} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={staticTitle} />
+      <meta name="twitter:title" content={title || staticTitle} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={staticImage} />
 

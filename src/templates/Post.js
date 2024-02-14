@@ -8,7 +8,7 @@ import PageHead from '../components/PageHead';
 export function Head({ data: { markdownRemark: post } }) {
   return (
     <PageHead
-      title={post.frontmatter.title}
+      title={`Tim Rybicki | ${post.frontmatter.title}`}
       description={post.frontmatter.description || post.excerpt}
     />
   );

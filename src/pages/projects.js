@@ -6,7 +6,7 @@ import projectsConfig from '../config/projects';
 import PageHead from '../components/PageHead';
 
 export function Head() {
-  return <PageHead title="Projects" />;
+  return <PageHead title="Tim Rybicki | Projects" />;
 }
 
 const Content = styled.div`
