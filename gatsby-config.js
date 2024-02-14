@@ -73,5 +73,12 @@ module.exports = {
         exclude: ['node_modules', 'bower_components', '.cache', 'public'],
       },
     },
+    {
+      resolve: '@chakra-ui/gatsby-plugin',
+      options: {
+        resetCSS: false,
+        portalZIndex: undefined,
+      },
+    },
   ],
 };
