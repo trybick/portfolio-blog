@@ -24,9 +24,9 @@ export default [
     name: 'Minimal Meditation',
     description: 'Android and iOS meditation timer.',
     mobileLinks: [
-      // { 
-        // platform: 'ios',
-        //  link: 'https://apps.apple.com/us/app/minimal-meditation/id1619968801' 
+      // {
+      // platform: 'ios',
+      //  link: 'https://apps.apple.com/us/app/minimal-meditation/id1619968801'
       // },
       {
         platform: 'android',

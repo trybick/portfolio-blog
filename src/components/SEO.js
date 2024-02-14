@@ -3,20 +3,18 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({ description, lang = 'en', meta = [], keywords = [], title = '' }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            description
-            author
-            title
-            image
-          }
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          description
+          author
+          title
+          image
         }
       }
-    `
-  );
+    }
+  `);
 
   const metaDescription = description || site.siteMetadata.description;
   const staticTitle = 'Tim Rybicki';
