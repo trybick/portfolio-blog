@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
-import theme from '../style/theme';
+import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const Content = styled.div`
   max-width: 860px;

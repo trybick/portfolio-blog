@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 // import { Box } from '@chakra-ui/react';
 // import { DiReact } from 'react-icons/di';
-import theme from '../style/theme';
+import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const FooterContainer = styled.footer`
   padding-bottom: 30px;

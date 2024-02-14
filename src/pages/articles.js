@@ -4,7 +4,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import theme from '../style/theme';
+import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const Content = styled.div`
   margin: 0 auto;

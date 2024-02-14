@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Box, Popover, PopoverTrigger, PopoverContent } from '@chakra-ui/react';
 import { FaGithub, FaGlobeAmericas, FaAppStoreIos, FaGooglePlay } from 'react-icons/fa';
-import theme from '../style/theme';
+import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const Card = styled.div`
   border-radius: 5px;

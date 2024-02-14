@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react';
 import { MdArrowForward } from 'react-icons/md';
 import favorites from '../config/favorites';
-import theme from '../style/theme';
+import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const FavoritesTitle = styled.h4`
   text-align: center;
