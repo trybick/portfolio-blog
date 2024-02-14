@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
 import ProjectCard from '../components/ProjectCard';
 import projectsConfig from '../config/projects';
 
@@ -27,7 +26,6 @@ const ProjectGroupContainer = styled.div`
 const PortfolioPage = () => {
   return (
     <Layout>
-      <SEO title="Projects" />
       <Content>
         <h1>Projects</h1>
         <ProjectGroupContainer>

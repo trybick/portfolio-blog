@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const Content = styled.div`
@@ -52,10 +51,6 @@ const MarkdownContent = styled.div`
 
 const Post = ({ data: { markdownRemark: post } }) => (
   <Layout>
-    <SEO
-      title={post.frontmatter.title}
-      description={post.frontmatter.description || post.excerpt}
-    />
     <Content>
       <PostTitle>{post.frontmatter.title}</PostTitle>
       <Date>

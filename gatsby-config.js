@@ -7,7 +7,6 @@ module.exports = {
     image: 'screenshot-portfolio.png',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

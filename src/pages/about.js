@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
 import ViewResumeButton from '../components/ViewResumeButton';
 import FavoritesAccordion from '../components/FavoritesAccordion';
 
@@ -18,7 +17,6 @@ const PageTitle = styled.h1`
 const AboutPage = () => {
   return (
     <Layout>
-      <SEO title="About" />
       <Content>
         <PageTitle>About</PageTitle>
         <ViewResumeButton />
