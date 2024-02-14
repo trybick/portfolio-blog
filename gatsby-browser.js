@@ -5,7 +5,3 @@ import 'typeface-nunito';
 export const wrapRootElement = ({ element }) => {
   return <ChakraProvider>{element}</ChakraProvider>;
 };
-
-export const onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: 'en' });
-};
