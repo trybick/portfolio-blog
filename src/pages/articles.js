@@ -3,8 +3,12 @@ import { Link, graphql } from 'gatsby';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
+import PageHead from '../components/PageHead';
+
+export function Head() {
+  return <PageHead title="Tim Rybicki | Articles" />;
+}
 
 const Content = styled.div`
   margin: 0 auto;
@@ -73,7 +77,6 @@ const BlogPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Articles" />
       <Content>
         <PageTitle>Articles</PageTitle>
         {parsedMarkdown}

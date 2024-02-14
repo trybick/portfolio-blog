@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Layout from '../../components/Layout';
-import SEO from '../../components/SEO';
+import PageHead from '../../components/PageHead';
+
+export function Head() {
+  return <PageHead title="Tim Rybicki | Privacy Policy" />;
+}
 
 const Content = styled.div`
   margin: 0 auto;
@@ -16,7 +20,6 @@ const PageTitle = styled.h1`
 const ChineseFlipPrviacyPage = () => {
   return (
     <Layout>
-      <SEO title="Chinese Flip Privacy Policy" />
       <Content>
         <PageTitle>Chinese Flip Privacy Policy</PageTitle>
 

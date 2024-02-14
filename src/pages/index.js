@@ -1,11 +1,14 @@
 import React from 'react';
 import LandingBio from '../components/Landing';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import PageHead from '../components/PageHead';
+
+export function Head() {
+  return <PageHead title="Tim Rybicki | Software Developer" />;
+}
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`tim rybicki`, `portfolio`, `blog`]} />
     <LandingBio />
   </Layout>
 );

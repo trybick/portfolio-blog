@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
 import ProjectCard from '../components/ProjectCard';
 import projectsConfig from '../config/projects';
+import PageHead from '../components/PageHead';
+
+export function Head() {
+  return <PageHead title="Tim Rybicki | Projects" />;
+}
 
 const Content = styled.div`
   margin: 0 auto;
@@ -27,7 +31,6 @@ const ProjectGroupContainer = styled.div`
 const PortfolioPage = () => {
   return (
     <Layout>
-      <SEO title="Projects" />
       <Content>
         <h1>Projects</h1>
         <ProjectGroupContainer>

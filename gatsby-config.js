@@ -2,12 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Tim Rybicki`,
     subtitle: `passionate about UI and dev experience`,
-    description: `Software Development Portfolio and Blog`,
+    description: `View my latest projects and blog posts centering around web development`,
     author: `Tim Rybicki`,
     image: 'screenshot-portfolio.png',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

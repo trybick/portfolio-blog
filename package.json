@@ -26,7 +26,6 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@types/react-helmet": "^6.0.0",
     "framer-motion": "^11.0.3",
     "gatsby": "4.25.8",
     "gatsby-image": "3.11.0",
@@ -34,7 +33,6 @@
     "gatsby-plugin-manifest": "^4.21.1",
     "gatsby-plugin-netlify": "5.1.1",
     "gatsby-plugin-offline": "6.13.1",
-    "gatsby-plugin-react-helmet": "^5.21.1",
     "gatsby-plugin-sharp": "4.25.1",
     "gatsby-remark-prismjs": "^6.21.1",
     "gatsby-source-filesystem": "^4.21.1",
@@ -44,7 +42,6 @@
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "react-icons": "^5.0.1",
     "react-spring": "^9.7.3",
     "typeface-nunito": "1.1.13"
