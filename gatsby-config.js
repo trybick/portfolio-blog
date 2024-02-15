@@ -58,8 +58,8 @@ module.exports = {
         name: `portfolio-blog`,
         short_name: `portfolio-blog`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#fff`,
+        background_color: '#0A1128',
+        theme_color: '#f5f5f5',
         display: `minimal-ui`,
         icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       },
