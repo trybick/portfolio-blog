@@ -35,6 +35,7 @@
     "gatsby-plugin-offline": "6.13.1",
     "gatsby-plugin-preact": "^7.13.1",
     "gatsby-remark-prismjs": "^6.21.1",
+    "gatsby-plugin-react-helmet": "^5.21.1",
     "gatsby-source-filesystem": "^4.21.1",
     "gatsby-transformer-remark": "^5.21.0",
     "preact": "^10.19.4",
