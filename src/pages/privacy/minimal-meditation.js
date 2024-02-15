@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Layout from '../../components/Layout';
-import PageHead from '../../components/PageHead';
-
-export function Head() {
-  return <PageHead title="Tim Rybicki | Privacy Policy" />;
-}
+import SEO from '../../components/SEO';
 
 const Content = styled.div`
   margin: 0 auto;
@@ -20,6 +16,7 @@ const PageTitle = styled.h1`
 const MinimalMeditationPrviacyPage = () => {
   return (
     <Layout>
+      <SEO title="Minimal Meditation Privacy Policy" />
       <Content>
         <PageTitle>Minimal Meditation Privacy Policy</PageTitle>
 

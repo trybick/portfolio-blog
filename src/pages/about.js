@@ -1,13 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import ViewResumeButton from '../components/ViewResumeButton';
 import FavoritesAccordion from '../components/FavoritesAccordion';
-import PageHead from '../components/PageHead';
-
-export function Head() {
-  return <PageHead title="Tim Rybicki | About" />;
-}
 
 const Content = styled.div`
   margin: 0 auto;
@@ -22,6 +18,7 @@ const PageTitle = styled.h1`
 const AboutPage = () => {
   return (
     <Layout>
+      <SEO title="About" />
       <Content>
         <PageTitle>About</PageTitle>
         <ViewResumeButton />
