@@ -14,15 +14,6 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -55,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `portfolio-blog`,
+        name: `Tim Rybicki's Portfolio`,
         short_name: `portfolio-blog`,
         start_url: `/`,
         background_color: '#0A1128',
