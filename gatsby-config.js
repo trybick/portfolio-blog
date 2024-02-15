@@ -15,7 +15,6 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
-    `gatsby-plugin-preact`,
     `gatsby-plugin-emotion`,
     {
       resolve: '@chakra-ui/gatsby-plugin',
