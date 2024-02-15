@@ -14,7 +14,15 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
+    `gatsby-plugin-preact`,
     `gatsby-plugin-emotion`,
+    {
+      resolve: '@chakra-ui/gatsby-plugin',
+      options: {
+        resetCSS: false,
+        portalZIndex: undefined,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -61,13 +69,6 @@ module.exports = {
         stages: ['develop'],
         extensions: ['js', 'jsx'],
         exclude: ['node_modules', 'bower_components', '.cache', 'public'],
-      },
-    },
-    {
-      resolve: '@chakra-ui/gatsby-plugin',
-      options: {
-        resetCSS: false,
-        portalZIndex: undefined,
       },
     },
   ],
