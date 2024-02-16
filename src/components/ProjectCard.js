@@ -83,7 +83,7 @@ const ProjectCard = ({ project: { name, description, githubLink, liveLink } }) =
         />
         <IconWithPopover
           icon={<FaGithub w="1.05rem" />}
-          iconText="View Repo"
+          iconText="View Code"
           link={githubLink}
           popoverWidth="91px"
         />
