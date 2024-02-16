@@ -55,12 +55,12 @@ const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
     </PopoverTrigger>
 
     <PopoverContent
-      backgroundColor="black"
+      backgroundColor={theme.colors.primary}
       border="0"
-      color="white"
+      color={theme.colors.background}
       fontSize="14px"
       fontWeight="bold"
-      height="34px"
+      height="30px"
       paddingX="6px"
       width={popoverWidth}
       zIndex={4}
@@ -85,7 +85,7 @@ const ProjectCard = ({ project: { name, description, githubLink, liveLink } }) =
           icon={<FaGithub w="1.05rem" />}
           iconText="View Repo"
           link={githubLink}
-          popoverWidth="92px"
+          popoverWidth="91px"
         />
       </Icons>
     </TopRow>
