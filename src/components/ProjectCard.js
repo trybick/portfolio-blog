@@ -19,8 +19,9 @@ const TopRow = styled.div`
   margin-bottom: 11px;
 `;
 
-const Title = styled.h4`
+const Title = styled.a`
   font-size: 1.05rem;
+  font-weight: 400;
   margin: 0;
   line-height: unset;
   white-space: nowrap;
@@ -73,7 +74,9 @@ const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
 const ProjectCard = ({ project: { name, description, githubLink, liveLink } }) => (
   <Card key={name}>
     <TopRow>
-      <Title>{name}</Title>
+      <Title href={liveLink} target="_blank" rel="noreferrer">
+        {name}
+      </Title>
       <Icons>
         <IconWithPopover
           icon={<FaGlobeAmericas w="1.05rem" />}
