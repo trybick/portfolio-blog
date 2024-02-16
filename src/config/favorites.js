@@ -5,39 +5,26 @@ import { MdFormatQuote } from 'react-icons/md';
 
 export default [
   {
-    title: 'Bands',
-    items: [
-      { name: 'Radiohead', link: 'https://www.youtube.com/results?search_query=radiohead' },
-      { name: 'Muse', link: 'https://www.youtube.com/results?search_query=muse' },
-      { name: 'Hammock', link: 'https://www.youtube.com/results?search_query=hammock+band' },
-      {
-        name: 'Above & Beyond',
-        link: 'https://www.youtube.com/results?search_query=above+%26+beyond',
-      },
-    ],
-    icon: IoMdPeople,
-  },
-  {
-    title: 'Songs',
+    title: 'TV Shows',
     items: [
       {
-        name: 'When I Was Done Dying - Dan Deacon',
-        link: 'https://www.youtube.com/results?search_query=dan+deacon+when+i+was+done+dying',
+        name: `Succession`,
+        link: 'https://www.google.com/search?q=succession+tv+show&rlz=1C5CHFA_enUS891US891&oq=succession+tv+show&aqs=chrome..69i57j46j0l6.3470j0j9&sourceid=chrome&ie=UTF-8',
       },
       {
-        name: 'Weird Fishes - Radiohead',
-        link: 'https://www.youtube.com/results?search_query=radiohead+weird+fishes',
+        name: 'Better Call Saul',
+        link: 'https://www.google.com/search?q=better+call+saul&rlz=1C5CHFA_enUS891US891&oq=better+call+saul&aqs=chrome..69i57j46j35i39j0l5.1807j0j7&sourceid=chrome&ie=UTF-8',
       },
       {
-        name: 'I Can Almost See You - Hammock',
-        link: 'https://www.youtube.com/results?search_query=hammock+i+can+almost+see+you',
+        name: 'Legion',
+        link: 'https://www.google.com/search?q=legion+tv+show&rlz=1C5CHFA_enUS891US891&oq=legion+tv+show&aqs=chrome..69i57j46j0l6.1637j0j7&sourceid=chrome&ie=UTF-8',
       },
       {
-        name: 'Glósóli - Sigur Ros',
-        link: 'https://www.youtube.com/results?search_query=sigur+ros+glosoli',
+        name: `Mr. Robot`,
+        link: 'https://www.google.com/search?safe=off&rlz=1C5CHFA_enUS891US891&sxsrf=ALeKk026o-cVh6bje4uNhA_7HxvPzcv7fg%3A1593907798287&ei=VhoBX6SFEZazytMPi-2MgAw&q=mr+robot+2015&oq=mr+robot+2015&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQRzoECAAQQzoHCAAQsQMQQzoFCAAQsQNQihpYsR5gpx9oAHABeACAAU2IAeECkgEBNZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwikiPyg6bTqAhWWmXIEHYs2A8AQ4dUDCAw&uact=5',
       },
     ],
-    icon: IoIosMusicalNotes,
+    icon: BsDisplay,
   },
   {
     title: 'Movies',
@@ -66,44 +53,39 @@ export default [
     icon: IoIosVideocam,
   },
   {
-    title: 'TV Shows',
+    title: 'Songs',
     items: [
       {
-        name: `Succession`,
-        link: 'https://www.google.com/search?q=succession+tv+show&rlz=1C5CHFA_enUS891US891&oq=succession+tv+show&aqs=chrome..69i57j46j0l6.3470j0j9&sourceid=chrome&ie=UTF-8',
+        name: 'When I Was Done Dying - Dan Deacon',
+        link: 'https://www.youtube.com/results?search_query=dan+deacon+when+i+was+done+dying',
       },
       {
-        name: 'Better Call Saul',
-        link: 'https://www.google.com/search?q=better+call+saul&rlz=1C5CHFA_enUS891US891&oq=better+call+saul&aqs=chrome..69i57j46j35i39j0l5.1807j0j7&sourceid=chrome&ie=UTF-8',
+        name: 'Weird Fishes - Radiohead',
+        link: 'https://www.youtube.com/results?search_query=radiohead+weird+fishes',
       },
       {
-        name: 'Legion',
-        link: 'https://www.google.com/search?q=legion+tv+show&rlz=1C5CHFA_enUS891US891&oq=legion+tv+show&aqs=chrome..69i57j46j0l6.1637j0j7&sourceid=chrome&ie=UTF-8',
+        name: 'I Can Almost See You - Hammock',
+        link: 'https://www.youtube.com/results?search_query=hammock+i+can+almost+see+you',
       },
       {
-        name: `Mr. Robot`,
-        link: 'https://www.google.com/search?safe=off&rlz=1C5CHFA_enUS891US891&sxsrf=ALeKk026o-cVh6bje4uNhA_7HxvPzcv7fg%3A1593907798287&ei=VhoBX6SFEZazytMPi-2MgAw&q=mr+robot+2015&oq=mr+robot+2015&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQRzoECAAQQzoHCAAQsQMQQzoFCAAQsQNQihpYsR5gpx9oAHABeACAAU2IAeECkgEBNZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwikiPyg6bTqAhWWmXIEHYs2A8AQ4dUDCAw&uact=5',
+        name: 'Glósóli - Sigur Ros',
+        link: 'https://www.youtube.com/results?search_query=sigur+ros+glosoli',
       },
     ],
-    icon: BsDisplay,
+    icon: IoIosMusicalNotes,
   },
   {
-    title: 'Podcasts',
+    title: 'Bands',
     items: [
+      { name: 'Radiohead', link: 'https://www.youtube.com/results?search_query=radiohead' },
+      { name: 'Muse', link: 'https://www.youtube.com/results?search_query=muse' },
+      { name: 'Hammock', link: 'https://www.youtube.com/results?search_query=hammock+band' },
       {
-        name: 'Syntax FM',
-        link: 'https://syntax.fm/',
-      },
-      {
-        name: 'Darknet Diaries',
-        link: 'https://darknetdiaries.com/',
-      },
-      {
-        name: `Dan Carlin's Hardcore History`,
-        link: 'https://www.dancarlin.com/hardcore-history-series/',
+        name: 'Above & Beyond',
+        link: 'https://www.youtube.com/results?search_query=above+%26+beyond',
       },
     ],
-    icon: IoIosMic,
+    icon: IoMdPeople,
   },
   {
     title: 'Books',
@@ -126,6 +108,24 @@ export default [
       },
     ],
     icon: AiOutlineRead,
+  },
+  {
+    title: 'Podcasts',
+    items: [
+      {
+        name: 'Syntax FM',
+        link: 'https://syntax.fm/',
+      },
+      {
+        name: 'Darknet Diaries',
+        link: 'https://darknetdiaries.com/',
+      },
+      {
+        name: `Dan Carlin's Hardcore History`,
+        link: 'https://www.dancarlin.com/hardcore-history-series/',
+      },
+    ],
+    icon: IoIosMic,
   },
   {
     title: 'Quotes',
