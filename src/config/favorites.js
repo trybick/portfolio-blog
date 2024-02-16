@@ -61,11 +61,11 @@ export default [
       },
       {
         name: 'Heaven Scent',
-        link: 'https://www.youtube.com/watch?v=3rL1kXvfFhU',
+        link: 'https://www.youtube.com/results?search_query=john+digweed+heaven+scent',
       },
       {
         name: 'Ben Böhmer live above Cappadocia in Turkey for Cercle',
-        link: 'https://www.youtube.com/watch?v=RvRhUHTV_8k&t=4s',
+        link: 'https://www.youtube.com/results?search_query=Ben+B%C3%B6hmer+live+above+Cappadocia+in+Turkey+for+Cercle',
       },
     ],
     icon: IoIosMusicalNotes,
@@ -87,20 +87,20 @@ export default [
     title: 'Books',
     items: [
       {
-        name: 'Snow Crash - Neal Stephenson',
-        link: 'https://www.goodreads.com/book/show/830.Snow_Crash',
-      },
-      {
-        name: 'Stories of Your Life and Others - Ted Chiang',
+        name: 'Stories of Your Life and Others',
         link: 'https://www.goodreads.com/book/show/223380.Stories_of_Your_Life_and_Others',
       },
       {
-        name: 'Empire of the Summer Moon - S.C. Gwynne',
+        name: `Endurance: Shackleton's Incredible Voyage`,
+        link: 'https://www.goodreads.com/book/show/139069.Endurance',
+      },
+      {
+        name: 'Empire of the Summer Moon',
         link: 'https://www.goodreads.com/book/show/7648269-empire-of-the-summer-moon',
       },
       {
-        name: 'House of Leaves - Mark Z. Danielewski',
-        link: 'https://www.goodreads.com/book/show/24800.House_of_Leaves',
+        name: 'Say Nothing',
+        link: 'https://www.goodreads.com/book/show/40163119-say-nothing',
       },
     ],
     icon: AiOutlineRead,
@@ -131,10 +131,10 @@ export default [
     title: 'Quotes',
     items: [
       {
-        name: `"Rules for happiness: something to do, someone to love, something to hope for."`,
+        name: `Rules for happiness: something to do, someone to love, something to hope for.`,
       },
       {
-        name: `"Don't demand that things happen as you wish, but wish that they happen as they do happen, and you will go on well."`,
+        name: `Don't demand that things happen as you wish, but wish that they happen as they do happen, and you will go on well.`,
       },
     ],
     icon: MdFormatQuote,
