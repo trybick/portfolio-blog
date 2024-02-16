@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Box, Popover, PopoverTrigger, PopoverContent } from '@chakra-ui/react';
-import { FaGithub, FaGlobeAmericas, FaAppStoreIos, FaGooglePlay } from 'react-icons/fa';
+import { FaGithub, FaGlobeAmericas } from 'react-icons/fa';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const Card = styled.div`
@@ -70,30 +70,17 @@ const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
   </Popover>
 );
 
-const ProjectCard = ({ project: { name, description, githubLink, liveLinks, mobileLinks } }) => (
+const ProjectCard = ({ project: { name, description, githubLink, liveLink } }) => (
   <Card key={name}>
     <TopRow>
       <Title>{name}</Title>
       <Icons>
-        {liveLinks
-          ? liveLinks.map(liveLink => (
-              <IconWithPopover
-                icon={<FaGlobeAmericas w="1.05rem" />}
-                iconText="View Site"
-                link={liveLink}
-                popoverWidth="84px"
-                key={liveLink}
-              />
-            ))
-          : mobileLinks.map(({ platform, link }) => (
-              <IconWithPopover
-                icon={platform === 'ios' ? <FaAppStoreIos w="1rem" /> : <FaGooglePlay w="1rem" />}
-                iconText={platform === 'ios' ? 'View App Store' : 'View Play Store'}
-                link={link}
-                popoverWidth="125px"
-                key={link}
-              />
-            ))}
+        <IconWithPopover
+          icon={<FaGlobeAmericas w="1.05rem" />}
+          iconText="View Project"
+          link={liveLink}
+          popoverWidth="103px"
+        />
         <IconWithPopover
           icon={<FaGithub w="1.05rem" />}
           iconText="View Repo"
