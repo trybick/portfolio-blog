@@ -8,7 +8,11 @@ const OuterContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 78vh;
+  height: 77vh;
+
+  @media (max-width: 767px) {
+    height: 72vh;
+  }
 `;
 
 const Content = styled.div`
