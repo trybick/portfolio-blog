@@ -18,9 +18,9 @@ const ProjectGroupContainer = styled.div`
   gap: 1.4rem;
   margin-bottom: 34px;
 
-  // @media screen and (max-width: 580px) {
-  //   grid-template-columns: repeat(1, 1fr);
-  // }
+  @media screen and (max-width: 580px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const PortfolioPage = () => {
