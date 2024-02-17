@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Box, Popover, PopoverTrigger, PopoverContent } from '@chakra-ui/react';
+import { Box, Popover, PopoverTrigger, PopoverContent, Link } from '@chakra-ui/react';
 import { FaGithub, FaGlobeAmericas } from 'react-icons/fa';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const Card = styled.div`
   border-radius: 5px;
   padding: 0.85rem;
-  min-width: 190px;
   height: 100%;
   position: relative;
   border: 1px solid ${theme.colors.gray};
@@ -19,7 +18,7 @@ const TopRow = styled.div`
   margin-bottom: 11px;
 `;
 
-const Title = styled.a`
+const Title = styled(Link)`
   font-size: 1.05rem;
   font-weight: 400;
   margin: 0;

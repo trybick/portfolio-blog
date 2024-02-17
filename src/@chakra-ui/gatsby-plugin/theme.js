@@ -10,7 +10,7 @@ export const colors = {
 const styles = {
   global: {
     body: {
-      fontFamily: 'Nunito, Avenir, Helvetica, sans-serif',
+      fontFamily: `'Nunito', sans-serif`,
       backgroundColor: colors.background,
       color: colors.primary,
     },
@@ -68,6 +68,9 @@ const styles = {
 const theme = {
   colors,
   styles,
+  fonts: {
+    heading: `'Nunito', sans-serif`,
+  },
 };
 
 export default extendTheme(theme);
