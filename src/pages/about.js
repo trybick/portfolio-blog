@@ -29,8 +29,8 @@ const AboutPage = () => {
           true calling.
         </p>
         <p>
-          I enjoy the web development ecosystem because of the endless possibilities between web,
-          mobile, and desktop apps.
+          I enjoy the web development ecosystem because the power and flexibility it provides for
+          web, mobile, and desktop apps.
         </p>
         <p>I care about creating things that are useful to people.</p>
 

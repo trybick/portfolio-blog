@@ -1,4 +1,5 @@
 import React from 'react';
+import { Flex, Heading } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -13,11 +14,9 @@ const Content = styled.div`
 
 const ProjectGroupContainer = styled.div`
   display: grid;
-  align-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 8fr;
-  gap: 1.2rem;
-  margin: 40px 0 50px;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+  margin-bottom: 40px;
 
   @media screen and (max-width: 580px) {
     grid-template-columns: repeat(1, 1fr);
@@ -29,12 +28,19 @@ const PortfolioPage = () => {
     <Layout>
       <SEO title="Projects" />
       <Content>
-        <h1>Projects</h1>
-        <ProjectGroupContainer>
-          {projectsConfig.map(project => (
-            <ProjectCard key={project.name} project={project} />
-          ))}
-        </ProjectGroupContainer>
+        <Heading as="h1">Projects</Heading>
+        {projectsConfig.map(item => (
+          <Flex key={item.category} flexDirection="column">
+            <Heading as="h3" size="md" mb="12px">
+              {item.category}
+            </Heading>
+            <ProjectGroupContainer>
+              {item.projects.map(project => (
+                <ProjectCard key={project.name} project={project} />
+              ))}
+            </ProjectGroupContainer>
+          </Flex>
+        ))}
       </Content>
     </Layout>
   );
