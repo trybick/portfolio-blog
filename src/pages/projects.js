@@ -16,7 +16,7 @@ const ProjectGroupContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.4rem;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 
   @media screen and (max-width: 580px) {
     grid-template-columns: repeat(1, 1fr);

@@ -4,13 +4,13 @@ export default [
     projects: [
       {
         name: 'TV Minder',
-        description: 'Full-stack app to track TV show schedules.',
+        description: 'Track all your favorite TV shows on one calendar.',
         liveLink: 'https://tv-minder.com/',
         githubLink: 'https://github.com/trybick/tv-minder',
       },
       {
         name: 'Issue Collab',
-        description: `Search tool for GitHub Issues.`,
+        description: `A more effective way to search issues on GitHub.`,
         liveLink: 'https://issue-collab.netlify.app',
         githubLink: 'https://github.com/trybick/issue-collab',
       },
@@ -38,13 +38,13 @@ export default [
     projects: [
       {
         name: 'Trance Tuner',
-        description: 'Desktop music streaming app.',
+        description: 'Listen to electronic music via keyboard shortcuts.',
         liveLink: 'https://trancetuner.netlify.app/',
         githubLink: 'https://github.com/trybick/trance-tuner',
       },
       {
         name: 'GIF Convert',
-        description: 'Browser and desktop GIF converter.',
+        description: 'Browser and desktop app to convert video to GIF.',
         liveLink: 'https://convertgif.netlify.app',
         githubLink: 'https://github.com/trybick/gifconvert',
       },
@@ -55,13 +55,13 @@ export default [
     projects: [
       {
         name: 'Terminal Zoom',
-        description: `VSCode extension to control the terminal size.`,
+        description: `Control your VSCode terminal's zoom level easily.`,
         liveLink: 'https://marketplace.visualstudio.com/items?itemName=trybick.terminal-zoom',
         githubLink: 'https://github.com/trybick/vscode-terminal-zoom',
       },
       {
         name: 'Slack Location Manager',
-        description: `Command line geolocation Slack tool.`,
+        description: `Update your Slack status based on geolocation.`,
         liveLink: 'https://www.npmjs.com/package/slack-location-manager',
         githubLink: 'https://github.com/trybick/slack-location-manager',
       },
@@ -72,7 +72,7 @@ export default [
     projects: [
       {
         name: `Skylar's llife`,
-        description: `Daughter's photo album.`,
+        description: `Photo album for my daughter.`,
         liveLink: 'https://skylar.netlify.app/',
         githubLink: 'https://github.com/trybick/skylar-life',
       },
