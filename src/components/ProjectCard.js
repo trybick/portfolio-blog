@@ -28,7 +28,8 @@ const Title = styled(Link)`
 
   &:hover {
     text-decoration-color: ${theme.colors.highlight};
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
   }
 `;
 

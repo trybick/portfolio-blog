@@ -30,6 +30,7 @@ const ItemLink = styled(Link)`
   &:hover {
     text-decoration-color: ${theme.colors.highlight};
     text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
   }
 `;
 
@@ -71,7 +72,7 @@ const FavoritesAccordion = () => (
                     {category.title === 'Quotes' ? (
                       item.name
                     ) : (
-                      <ItemLink href={item.ItemLink} isExternal>
+                      <ItemLink href={item.link} isExternal>
                         {item.name}
                       </ItemLink>
                     )}
