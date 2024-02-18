@@ -1,9 +1,9 @@
 import { extendTheme } from '@chakra-ui/react';
 
 export const colors = {
-  background: '#0A1128',
-  primary: '#f5f5f5',
-  gray: '#adb5bd',
+  background: '#171923',
+  primary: '#cbd5e0',
+  gray: '#718096',
   highlight: '#0096c7',
 };
 
