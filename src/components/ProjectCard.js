@@ -20,7 +20,7 @@ const TopRow = styled.div`
 
 const Title = styled(Link)`
   font-size: 1.05rem;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
   line-height: unset;
   white-space: nowrap;
@@ -48,7 +48,7 @@ const Description = styled.p`
   font-size: 0.9rem;
   line-height: 21px;
   margin-bottom: 1.1rem;
-  color: ${theme.colors.gray};
+  color: ${theme.colors.primary};
 `;
 
 const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
