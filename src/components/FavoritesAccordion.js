@@ -26,6 +26,13 @@ const CategoryTitle = styled.span`
   vertical-align: middle;
 `;
 
+const ItemLink = styled(Link)`
+  &:hover {
+    text-decoration-color: ${theme.colors.highlight};
+    text-decoration-thickness: 2px;
+  }
+`;
+
 const FavoritesAccordion = () => (
   <>
     <FavoritesTitle>Some of my interests:</FavoritesTitle>
@@ -64,9 +71,9 @@ const FavoritesAccordion = () => (
                     {category.title === 'Quotes' ? (
                       item.name
                     ) : (
-                      <Link href={item.link} isExternal>
+                      <ItemLink href={item.ItemLink} isExternal>
                         {item.name}
-                      </Link>
+                      </ItemLink>
                     )}
                   </ListItem>
                 ))}
