@@ -25,6 +25,11 @@ const Title = styled(Link)`
   line-height: unset;
   white-space: nowrap;
   overflow: hidden;
+
+  &:hover {
+    text-decoration-color: ${theme.colors.highlight};
+    text-decoration-thickness: 3px;
+  }
 `;
 
 const Icons = styled.div`
