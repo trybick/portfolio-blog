@@ -7,19 +7,19 @@ export const wrapRootElement = ({ element }) => {
 };
 
 // Umami Analytics
-export const onRenderBody = ({ setHeadComponents }) => {
+export const onRenderBody = ({ setPostBodyComponents }) => {
   const isEnabled = process.env.NODE_ENV === 'production';
   if (!isEnabled) {
     return null;
   }
 
-  return setHeadComponents([
+  return setPostBodyComponents([
     <script
       async
       defer
       key="gastby-plugin-umami"
       id="gastby-plugin-umami"
-      src="https://cloud.umami.is/script.js"
+      src="https://analytics.umami.is/script.js "
       data-website-id="48c1ee6e-d63c-4d03-a6e0-1e7f990784eb"
       data-do-not-track="false"
     ></script>,
