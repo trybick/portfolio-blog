@@ -18,10 +18,12 @@ const PostTitle = styled.h1`
   background-position: 0px 88%;
   transition: background-size 0.25s ease-in 0s;
   line-height: 50px;
+  font-size: 2.5rem;
 `;
 
 const Date = styled.h3`
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-bottom: 18px;
   color: ${theme.colors.gray};
 `;
 

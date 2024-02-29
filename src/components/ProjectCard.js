@@ -46,7 +46,7 @@ const Icons = styled.div`
 `;
 
 const Description = styled.p`
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 21px;
   margin-bottom: 1.1rem;
   color: ${theme.colors.primary};

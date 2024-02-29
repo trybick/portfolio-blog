@@ -36,6 +36,9 @@ const styles = {
     [':not(pre) > code']: {
       fontSize: '0.9rem',
     },
+    code: {
+      color: colors.gray,
+    },
 
     // Selection highlight
     ['h1::selection']: {
@@ -60,6 +63,21 @@ const styles = {
       background: colors.highlight,
     },
     ['a::selection']: {
+      background: colors.highlight,
+    },
+    ['li::selection']: {
+      background: colors.highlight,
+    },
+    ['u::selection']: {
+      background: colors.highlight,
+    },
+    ['i::selection']: {
+      background: colors.highlight,
+    },
+    ['strong::selection']: {
+      background: colors.highlight,
+    },
+    ['code::selection']: {
       background: colors.highlight,
     },
   },
