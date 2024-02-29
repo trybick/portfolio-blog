@@ -19,7 +19,7 @@ const TopRow = styled.div`
 `;
 
 const Title = styled(Link)`
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
   line-height: unset;
@@ -46,7 +46,7 @@ const Icons = styled.div`
 `;
 
 const Description = styled.p`
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 21px;
   margin-bottom: 1.1rem;
   color: ${theme.colors.primary};

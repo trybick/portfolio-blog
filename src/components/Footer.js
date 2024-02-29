@@ -6,6 +6,7 @@ import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const FooterContainer = styled.footer`
   padding-bottom: 30px;
+  font-size: 1.2rem;
 `;
 
 const FooterRow = styled.div`

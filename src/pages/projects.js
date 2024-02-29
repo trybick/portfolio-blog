@@ -28,10 +28,12 @@ const PortfolioPage = () => {
     <Layout>
       <SEO title="Projects" />
       <Content>
-        <Heading as="h1">Projects</Heading>
+        <Heading as="h1" fontSize="2.5rem" mb="26px">
+          Projects
+        </Heading>
         {projectsConfig.map(item => (
           <Flex key={item.category} flexDirection="column">
-            <Heading as="h3" size="md" mb="12px">
+            <Heading as="h3" size="md" mb="12px" fontSize="1.4rem">
               {item.category}
             </Heading>
             <ProjectGroupContainer>

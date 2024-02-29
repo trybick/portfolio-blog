@@ -5,8 +5,8 @@ import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 const Content = styled.div`
   max-width: 860px;
-  padding: 1rem 1.0875rem;
-  font-size: 1.2rem;
+  padding: 1.2rem 1.0875rem;
+  font-size: 1.4rem;
 `;
 
 const SiteHeader = styled.header`

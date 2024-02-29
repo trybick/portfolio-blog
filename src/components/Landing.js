@@ -20,13 +20,13 @@ const Content = styled.div`
 `;
 
 const Description = styled.p`
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 26px;
   margin: 12px auto;
 `;
 
 const NameHeader = styled.h1`
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   margin-bottom: 0;
 `;
 

@@ -9,11 +9,12 @@ const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
   padding: 1.45rem 1.0875rem;
-  font-size: 17px;
+  font-size: 1.2rem;
 `;
 
 const PageTitle = styled.h1`
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  font-size: 2.5rem;
 `;
 
 const AboutPage = () => {
@@ -30,10 +31,10 @@ const AboutPage = () => {
           true calling.
         </p>
         <p>
-          I enjoy the web development ecosystem because the power and flexibility it provides for
-          web, mobile, and desktop apps.
+          I have focused on frontend web development using React and TypeScript because the power
+          and flexibility it provides for building modern and useful web, mobile, and desktop
+          applications.
         </p>
-        <p>I care about creating things that are useful to people.</p>
 
         <FavoritesAccordion />
       </Content>

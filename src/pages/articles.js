@@ -14,6 +14,7 @@ const Content = styled.div`
 
 const PageTitle = styled.h1`
   margin-bottom: 40px;
+  font-size: 2.5rem;
 `;
 
 const CreatedDate = styled.h5`
