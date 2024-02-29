@@ -242,7 +242,7 @@ h2 {
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 1.8rem;
   line-height: 1.1;
 }
 h3 {
@@ -283,11 +283,11 @@ h5 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
+  /* font-size: 0.85028rem; */
   line-height: 1.1;
 }
 h6 {
@@ -368,6 +368,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-size: 1.2rem;
 }
 figure {
   margin-left: 0;
@@ -383,8 +384,8 @@ pre {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  margin-bottom: 1.45rem;
-  font-size: 0.8rem;
+  margin-bottom: 1.5rem !important;
+  font-size: 1rem !important;
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
@@ -493,6 +494,7 @@ th {
 }
 li {
   margin-bottom: calc(1.45rem / 2);
+  font-size: 1.2rem;
 }
 ol li {
   padding-left: 0;
@@ -523,7 +525,7 @@ li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 code {
-  font-size: 0.8rem;
+  font-size: 1.1rem !important;
   line-height: 1.45rem;
 }
 kbd {
@@ -595,4 +597,9 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: '';
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  font-size: 1.1rem;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import { Text } from '@chakra-ui/react';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
@@ -14,6 +15,7 @@ const Content = styled.div`
 
 const PageTitle = styled.h1`
   margin-bottom: 40px;
+  font-size: 2.5rem;
 `;
 
 const CreatedDate = styled.h5`
@@ -25,7 +27,7 @@ const PostTitle = styled.h2`
   background-size: 100% 0em;
   background-repeat: no-repeat;
   background-position: 0px 88%;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   transition: background-size 0.25s ease-in 0s;
   margin: 0;
   display: inline;
@@ -38,6 +40,7 @@ const PostTitle = styled.h2`
 
 const MidHeader = styled.div`
   margin: 4px 0;
+  font-size: 0.9rem;
 `;
 
 const ReadingTime = styled.h5`
@@ -67,7 +70,9 @@ const BlogPage = ({ data }) => {
           <CreatedDate>{node.frontmatter.date}</CreatedDate>
           <ReadingTime> - {node.timeToRead} min</ReadingTime>
         </MidHeader>
-        <p>{node.excerpt}</p>
+        <Text fontSize="1.2rem" mb="1.5rem">
+          {node.excerpt}
+        </Text>
       </div>
     ));
 

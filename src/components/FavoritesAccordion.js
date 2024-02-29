@@ -19,11 +19,14 @@ import theme from '../@chakra-ui/gatsby-plugin/theme';
 const FavoritesTitle = styled.h4`
   text-align: center;
   margin: 40px 0 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
 `;
 
 const CategoryTitle = styled.span`
   margin-left: 8px;
   vertical-align: middle;
+  font-size: 1.1rem;
 `;
 
 const ItemLink = styled(Link)`
@@ -36,7 +39,7 @@ const ItemLink = styled(Link)`
 
 const FavoritesAccordion = () => (
   <>
-    <FavoritesTitle>Some of my interests:</FavoritesTitle>
+    <FavoritesTitle>Some of my favorites:</FavoritesTitle>
     <Box borderRadius=".25rem" padding=".75rem" margin="0 auto 20px" maxWidth="500px">
       <Accordion allowToggle defaultIndex={-1}>
         {favorites.map(category => (
@@ -56,7 +59,7 @@ const FavoritesAccordion = () => (
               <Box flex="1" textAlign="left">
                 <Box
                   as={category.icon}
-                  w="15px"
+                  w="1.1rem"
                   verticalAlign="middle"
                   display="inline !important"
                 />
@@ -67,8 +70,8 @@ const FavoritesAccordion = () => (
             <AccordionPanel pb={0} pt={2} pl={0}>
               <List spacing={2} alignItems="center" id="lllll">
                 {category.items.map(item => (
-                  <ListItem key={item.name} fontSize="16px">
-                    <ListIcon as={MdArrowForward} w="16px" verticalAlign="sub" />
+                  <ListItem key={item.name} fontSize="1rem">
+                    <ListIcon as={MdArrowForward} w="1rem" verticalAlign="sub" />
                     {category.title === 'Quotes' ? (
                       item.name
                     ) : (
