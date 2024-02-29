@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Box, Popover, PopoverTrigger, PopoverContent, Link } from '@chakra-ui/react';
+import { Box, Popover, PopoverTrigger, PopoverContent, Link, PopoverArrow } from '@chakra-ui/react';
 import { FaGithub, FaGlobeAmericas } from 'react-icons/fa';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
 
@@ -53,7 +53,7 @@ const Description = styled.p`
 `;
 
 const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
-  <Popover trigger="hover">
+  <Popover trigger="hover" placement="top">
     <PopoverTrigger>
       <a href={link} target="_blank" rel="noreferrer">
         {icon}
@@ -71,6 +71,7 @@ const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
       width={popoverWidth}
       zIndex={4}
     >
+      <PopoverArrow backgroundColor={theme.colors.primary} />
       <Box p={1}>{iconText}</Box>
     </PopoverContent>
   </Popover>
