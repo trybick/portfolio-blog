@@ -27,8 +27,9 @@ const ViewResumeButton = () => (
         cursor="pointer"
         leftIcon={<GrDocumentPdf />}
         size="md"
-        backgroundColor={theme.colors.primary}
-        color={theme.colors.background}
+        colorScheme="whiteAlpha"
+        color={theme.colors.primary}
+        variant="outline"
       >
         View Resume
       </Button>
