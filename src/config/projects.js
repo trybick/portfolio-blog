@@ -67,21 +67,4 @@ export default [
       },
     ],
   },
-  {
-    category: 'Mini Projects',
-    projects: [
-      {
-        name: `Skylar's llife`,
-        description: `Photo album for my daughter`,
-        liveLink: 'https://skylar.netlify.app/',
-        githubLink: 'https://github.com/trybick/skylar-life',
-      },
-      {
-        name: 'Gender Reveal',
-        description: `Fun way to reveal the gender`,
-        liveLink: 'https://gender-reveal.netlify.app/',
-        githubLink: 'https://github.com/trybick/gender-reveal',
-      },
-    ],
-  },
 ];

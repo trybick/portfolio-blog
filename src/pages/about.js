@@ -26,14 +26,13 @@ const AboutPage = () => {
         <ViewResumeButton />
 
         <p>
-          I grew up in the 90s and dabbled with programming in the MySpace era but didn’t fully get
-          into coding until I attented a web dev bootcamp in 2018. Since then I feel like I found my
-          true calling.
+          I genuinely enjoy building and obsessing over software that feels great to use. I didn’t start coding until later in life, but once I discovered it, it really clicked. I approach engineering with a growth mindset, first-principles thinking, and a constant question: “How will the user feel in this scenario?”
         </p>
         <p>
-          I have focused on frontend web development using React and TypeScript because the power
-          and flexibility it provides for building modern and useful web, mobile, and desktop
-          applications.
+          I’m always in search of new things to learn although usually my tools of choice have been React and TypeScript because of their power and versatility. I've used these to build web, mobile, and desktop applications.
+        </p>
+        <p>
+          At the end of the day, I’m driven by curiosity and the simple joy of turning problems into products people enjoy using.
         </p>
 
         <FavoritesAccordion />
