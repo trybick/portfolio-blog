@@ -58,6 +58,9 @@ const Footer = () => (
       <FirstContactLink href="https://github.com/trybick" target="_blank" rel="noreferrer">
         GitHub
       </FirstContactLink>
+      <ContactLink href={resumeHref} target="_blank" rel="noreferrer">
+        Resume
+      </ContactLink>
       <ContactLink href="https://www.linkedin.com/in/tim-rybicki/" target="_blank" rel="noreferrer">
         LinkedIn
       </ContactLink>
