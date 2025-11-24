@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 // import { Box } from '@chakra-ui/react';
 // import { DiReact } from 'react-icons/di';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
+import { resumeHref } from './ViewResumeButton';
 
 const FooterContainer = styled.footer`
   padding-bottom: 30px;
