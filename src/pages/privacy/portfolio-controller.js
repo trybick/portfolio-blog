@@ -13,12 +13,12 @@ const PageTitle = styled.h1`
   margin-bottom: 24px;
 `;
 
-const PortfolioAccountSorterPrivacyPage = () => {
+const PortfolioControllerPrivacyPage = () => {
   return (
     <Layout>
-      <SEO title="Portfolio Account Sorter Privacy Policy" />
+      <SEO title="Portfolio Controller Privacy Policy" />
       <Content>
-        <PageTitle>Portfolio Account Sorter Privacy Policy</PageTitle>
+        <PageTitle>Portfolio Controller Privacy Policy</PageTitle>
 
         <>
           <p>Effective date: 2026-05-31</p>
@@ -31,7 +31,7 @@ const PortfolioAccountSorterPrivacyPage = () => {
             <strong>Overview</strong>
           </p>
           <p>
-            Portfolio Account Sorter is a Chrome browser extension that allows users to reorder the
+            Portfolio Controller is a Chrome browser extension that allows users to reorder the
             display of accounts on the Fidelity portfolio page. It is not affiliated with, endorsed
             by, or associated with Fidelity Investments or any Fidelity entity.
           </p>
@@ -112,4 +112,4 @@ const PortfolioAccountSorterPrivacyPage = () => {
   );
 };
 
-export default PortfolioAccountSorterPrivacyPage;
+export default PortfolioControllerPrivacyPage;
