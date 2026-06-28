@@ -1,8 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { useLocation } from '@reach/router';
+
+const SITE_URL = 'https://timr.dev';
+const SITE_NAME = 'Tim Rybicki';
 
 function SEO({ description, title }) {
+  const { pathname } = useLocation();
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -17,25 +22,26 @@ function SEO({ description, title }) {
   `);
 
   const metaDescription = description || site.siteMetadata.description;
-  const staticTitle = 'Tim Rybicki';
   const staticImage = 'https://timr.dev/screenshot-portfolio.png';
+  const pageUrl = `${SITE_URL}${pathname}`;
+  const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
 
   return (
     <Helmet
       htmlAttributes={{
         lang: 'en',
       }}
-      title={staticTitle}
-      titleTemplate={`%s | ${title}`}
+      title={title}
+      titleTemplate={`%s | ${SITE_NAME}`}
+      defaultTitle={SITE_NAME}
       meta={[
         {
           name: `keywords`,
           content: 'tim rybicki, software developer, portfolio, blog',
         },
-        //  Google / Search Engine Tags
         {
           itemprop: `name`,
-          content: staticTitle,
+          content: pageTitle,
         },
         {
           itemprop: `description`,
@@ -45,10 +51,9 @@ function SEO({ description, title }) {
           itemprop: `image`,
           content: staticImage,
         },
-        // Facebook Meta Tags
         {
           property: `og:url`,
-          content: 'https://timr.dev',
+          content: pageUrl,
         },
         {
           property: `og:type`,
@@ -56,7 +61,7 @@ function SEO({ description, title }) {
         },
         {
           property: `og:title`,
-          content: staticTitle,
+          content: pageTitle,
         },
         {
           property: `og:description`,
@@ -66,14 +71,13 @@ function SEO({ description, title }) {
           property: `og:image`,
           content: staticImage,
         },
-        // Twitter Meta Tags
         {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
         {
           name: `twitter:title`,
-          content: staticTitle,
+          content: pageTitle,
         },
         {
           name: `twitter:description`,
