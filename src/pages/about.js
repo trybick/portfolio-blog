@@ -18,77 +18,62 @@ const PageTitle = styled.h1`
   font-size: 2.5rem;
 `;
 
-const Bio = styled.div`
+const TopSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
   margin-top: 1.5rem;
 
-  p {
-    margin-top: 0;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
   }
+`;
 
-  ::after {
-    content: '';
-    display: block;
-    clear: both;
+const SideColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+
+  > div {
+    margin: 0;
+    text-align: center;
   }
 `;
 
 const HeadshotImage = styled.img`
-  float: left;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  margin: 0 2rem 1rem 0;
-  shape-outside: circle();
-  shape-margin: 1rem;
+  margin-bottom: 1rem;
   box-shadow: 0 0 0 4px ${colors.highlight}, 0 10px 24px rgba(0, 0, 0, 0.35);
-  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1),
-    box-shadow 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-
-  :hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 0 4px ${colors.highlight}, 0 16px 32px rgba(0, 0, 0, 0.45);
-  }
 
   @media (max-width: 860px) {
     width: 160px;
     height: 160px;
-    margin-right: 1.5rem;
   }
 
   @media (max-width: 600px) {
-    float: none;
-    display: block;
     width: 200px;
     height: 200px;
-    margin: 0 auto 1.25rem;
   }
 `;
 
-const ResumeWrapper = styled.div`
-  float: left;
-  clear: left;
-  width: 200px;
-
-  > div {
-    text-align: center;
-    margin: 0;
+const IntroText = styled.div`
+  p:first-of-type {
+    margin-top: 0;
   }
 
-  @media (max-width: 860px) {
-    width: 160px;
+  p:last-of-type {
+    margin-bottom: 0;
   }
+`;
 
-  @media (max-width: 600px) {
-    float: none;
-    clear: none;
-    width: 100%;
-
-    > div {
-      margin-bottom: 1.25rem;
-    }
-  }
+const ClosingParagraph = styled.p`
+  margin-top: 1.75rem;
 `;
 
 const AboutPage = () => {
@@ -98,21 +83,24 @@ const AboutPage = () => {
       <Content>
         <PageTitle>About</PageTitle>
 
-        <Bio>
-          <HeadshotImage src="/me headshot.png" alt="Tim R" />
-          <ResumeWrapper>
+        <TopSection>
+          <SideColumn>
+            <HeadshotImage src="/me headshot.png" alt="Tim R" />
             <ViewResumeButton />
-          </ResumeWrapper>
-          <p>
-            I genuinely enjoy building and obsessing over software that feels great to use. I didn&apos;t start coding until later in life, but once I discovered it, it really clicked. I approach engineering with a growth mindset, first-principles thinking, and a constant question: &ldquo;How will the user feel in this scenario?&rdquo;
-          </p>
-          <p>
-            I&apos;m always in search of new things to learn although usually my tools of choice have been React and TypeScript because of their power and versatility. I&apos;ve used these to build web, mobile, and desktop applications.
-          </p>
-          <p>
-            At the end of the day, I&apos;m driven by curiosity and the simple joy of turning problems into products people enjoy using.
-          </p>
-        </Bio>
+          </SideColumn>
+          <IntroText>
+            <p>
+              I genuinely enjoy building and obsessing over software that feels great to use. I didn&apos;t start coding until later in life, but once I discovered it, it really clicked. I approach engineering with a growth mindset, first-principles thinking, and a constant question: &ldquo;How will the user feel in this scenario?&rdquo;
+            </p>
+            <p>
+              I&apos;m always in search of new things to learn although usually my tools of choice have been React and TypeScript because of their power and versatility. I&apos;ve used these to build web, mobile, and desktop applications.
+            </p>
+          </IntroText>
+        </TopSection>
+
+        <ClosingParagraph>
+          At the end of the day, I&apos;m driven by curiosity and the simple joy of turning problems into products people enjoy using.
+        </ClosingParagraph>
 
         <FavoritesAccordion />
       </Content>
