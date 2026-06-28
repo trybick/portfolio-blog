@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ViewResumeButton from '../components/ViewResumeButton';
 import FavoritesAccordion from '../components/FavoritesAccordion';
+import { colors } from '../@chakra-ui/gatsby-plugin/theme';
 
 const Content = styled.div`
   margin: 0 auto;
@@ -32,19 +33,61 @@ const Bio = styled.div`
 `;
 
 const HeadshotImage = styled.img`
-  float: right;
+  float: left;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  margin: 0 0 1rem 2rem;
+  margin: 0 2rem 1rem 0;
   shape-outside: circle();
+  shape-margin: 1rem;
+  box-shadow: 0 0 0 4px ${colors.highlight}, 0 10px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1),
+    box-shadow 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+
+  :hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 4px ${colors.highlight}, 0 16px 32px rgba(0, 0, 0, 0.45);
+  }
+
+  @media (max-width: 860px) {
+    width: 160px;
+    height: 160px;
+    margin-right: 1.5rem;
+  }
 
   @media (max-width: 600px) {
     float: none;
     display: block;
+    width: 200px;
+    height: 200px;
     margin: 0 auto 1.25rem;
+  }
+`;
+
+const ResumeWrapper = styled.div`
+  float: left;
+  clear: left;
+  width: 200px;
+
+  > div {
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (max-width: 860px) {
+    width: 160px;
+  }
+
+  @media (max-width: 600px) {
+    float: none;
+    clear: none;
+    width: 100%;
+
+    > div {
+      margin-bottom: 1.25rem;
+    }
   }
 `;
 
@@ -54,10 +97,12 @@ const AboutPage = () => {
       <SEO title="About" />
       <Content>
         <PageTitle>About</PageTitle>
-        <ViewResumeButton />
 
         <Bio>
           <HeadshotImage src="/me headshot.png" alt="Tim R" />
+          <ResumeWrapper>
+            <ViewResumeButton />
+          </ResumeWrapper>
           <p>
             I genuinely enjoy building and obsessing over software that feels great to use. I didn&apos;t start coding until later in life, but once I discovered it, it really clicked. I approach engineering with a growth mindset, first-principles thinking, and a constant question: &ldquo;How will the user feel in this scenario?&rdquo;
           </p>
