@@ -55,7 +55,7 @@ const Description = styled.p`
 const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
   <Popover trigger="hover" placement="top">
     <PopoverTrigger>
-      <a href={link} target="_blank" rel="noreferrer">
+      <a href={link} target="_blank" rel="noreferrer" aria-label={iconText}>
         {icon}
       </a>
     </PopoverTrigger>
