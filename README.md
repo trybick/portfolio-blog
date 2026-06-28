@@ -12,6 +12,6 @@
 To run the local dev server:
 
 ```shell
-yarn
-yarn start
+npm install
+npm start
 ```

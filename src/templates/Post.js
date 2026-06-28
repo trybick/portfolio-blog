@@ -69,8 +69,8 @@ const Post = ({ data: { markdownRemark: post } }) => (
 );
 
 export const pageQuery = graphql`
-  query ($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query ($postPath: String!) {
+    markdownRemark(frontmatter: { path: { eq: $postPath } }) {
       html
       excerpt(pruneLength: 160)
       frontmatter {

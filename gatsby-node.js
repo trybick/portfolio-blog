@@ -43,8 +43,9 @@ exports.createPages = ({ graphql, actions }) => {
         createPage({
           path: node.frontmatter.path,
           component: blogPostTemplate,
-          slug: node.fields.slug,
-          context: {},
+          context: {
+            postPath: node.frontmatter.path,
+          },
         });
       });
   });
