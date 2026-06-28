@@ -4,7 +4,7 @@ import { Button } from '@chakra-ui/react';
 import { GrDocumentPdf } from 'react-icons/gr';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
 
-export const resumeHref = 'https://drive.google.com/file/d/1t1BnEI714ydFMA7APf4tkwcCHJEBWzpd/edit';
+export const resumeHref = 'https://drive.google.com/file/d/1t1BnEI714ydFMA7APf4tkwcCHJEBWzpd/view';
 
 const ResumeLinkContainer = styled.div`
   text-align: right;
