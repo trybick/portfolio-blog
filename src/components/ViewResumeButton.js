@@ -25,11 +25,12 @@ const ViewResumeButton = () => (
     <ResumeLink href={resumeHref} target="_blank" rel="noreferrer">
       <Button
         cursor="pointer"
-        leftIcon={<GrDocumentPdf />}
+        leftIcon={<GrDocumentPdf style={{ display: 'block' }} />}
         size="md"
         colorScheme="whiteAlpha"
         color={theme.colors.primary}
         variant="outline"
+        lineHeight="1"
       >
         View Resume
       </Button>
