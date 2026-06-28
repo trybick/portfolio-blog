@@ -6,7 +6,7 @@ import theme from '../@chakra-ui/gatsby-plugin/theme';
 import { resumeHref } from './ViewResumeButton';
 
 const FooterContainer = styled.footer`
-  padding-bottom: 30px;
+  padding: 0 0 16px;
   font-size: 1.2rem;
 `;
 

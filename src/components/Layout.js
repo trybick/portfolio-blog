@@ -11,10 +11,9 @@ const PageWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  flex: 1;
+  flex-grow: 1;
   margin: 0 auto;
   max-width: 860px;
-  width: 100%;
   padding: 0 1.0875rem 1rem;
   padding-top: 0;
 `;
