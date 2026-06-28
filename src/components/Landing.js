@@ -15,11 +15,6 @@ const featuredProjects = [
     description: 'VS Code extension. 25K+ installs',
     href: 'https://marketplace.visualstudio.com/items?itemName=trybick.terminal-zoom',
   },
-  {
-    name: 'Chinese Flip',
-    description: 'iOS & Android language app',
-    href: 'https://play.google.com/store/apps/details?id=com.trybicki.chineseflip',
-  },
 ];
 
 const OuterContainer = styled.div`
@@ -64,26 +59,8 @@ const FeaturedList = styled.div`
   text-align: left;
 `;
 
-const FeaturedItem = styled.div`
-  display: grid;
-  grid-template-columns: 130px 1fr;
-  align-items: baseline;
-  column-gap: 18px;
-  font-size: 0.95rem;
-
-  @media (max-width: 767px) {
-    grid-template-columns: 115px 1fr;
-    column-gap: 12px;
-  }
-`;
-
-const FeaturedDescription = styled.span`
-  color: ${colors.gray};
-`;
-
-const FeaturedLink = styled.a`
-  color: ${colors.primary} !important;
-  text-decoration: none;
+const FeaturedName = styled.span`
+  color: ${colors.primary};
   display: inline-block;
   width: fit-content;
   position: relative;
@@ -100,10 +77,42 @@ const FeaturedLink = styled.a`
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
+`;
 
-  :hover::after {
+const FeaturedDescription = styled.span`
+  color: ${colors.gray};
+  transition: color 0.2s ease;
+`;
+
+const FeaturedItem = styled.a`
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: baseline;
+  column-gap: 18px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 6px 10px;
+  margin: 0 -10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: rgba(0, 150, 199, 0.08);
+  }
+
+  &:hover ${FeaturedName}::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  &:hover ${FeaturedDescription} {
+    color: ${colors.primary};
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 115px 1fr;
+    column-gap: 12px;
   }
 `;
 
@@ -136,10 +145,13 @@ const LandingBio = () => {
               <FeaturedLabel>Recent work</FeaturedLabel>
               <FeaturedList>
                 {featuredProjects.map(project => (
-                  <FeaturedItem key={project.name}>
-                    <FeaturedLink href={project.href} target="_blank" rel="noreferrer">
-                      {project.name}
-                    </FeaturedLink>
+                  <FeaturedItem
+                    key={project.name}
+                    href={project.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FeaturedName>{project.name}</FeaturedName>
                     <FeaturedDescription>{project.description}</FeaturedDescription>
                   </FeaturedItem>
                 ))}
