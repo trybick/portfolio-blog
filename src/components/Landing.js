@@ -2,6 +2,25 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 import { animated, useSpring } from 'react-spring';
+import { colors } from '../@chakra-ui/gatsby-plugin/theme';
+
+const featuredProjects = [
+  {
+    name: 'TV Minder',
+    description: 'Track your shows on one calendar',
+    href: 'https://tv-minder.com/',
+  },
+  {
+    name: 'Terminal Zoom',
+    description: 'VS Code extension. 25K+ installs',
+    href: 'https://marketplace.visualstudio.com/items?itemName=trybick.terminal-zoom',
+  },
+  {
+    name: 'Chinese Flip',
+    description: 'iOS & Android language app',
+    href: 'https://play.google.com/store/apps/details?id=com.trybicki.chineseflip',
+  },
+];
 
 const OuterContainer = styled.div`
   display: flex;
@@ -30,6 +49,64 @@ const NameHeader = styled.h1`
   margin-bottom: 0;
 `;
 
+const FeaturedLabel = styled.p`
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 44px 0 12px;
+  color: ${colors.gray};
+`;
+
+const FeaturedList = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 9px;
+  text-align: left;
+`;
+
+const FeaturedItem = styled.div`
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: baseline;
+  column-gap: 18px;
+  font-size: 0.95rem;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 115px 1fr;
+    column-gap: 12px;
+  }
+`;
+
+const FeaturedDescription = styled.span`
+  color: ${colors.gray};
+`;
+
+const FeaturedLink = styled.a`
+  color: ${colors.primary} !important;
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+  position: relative;
+
+  ::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: ${colors.highlight};
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  :hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+`;
+
 const LandingBio = () => {
   const transitionConfig = useSpring({
     opacity: 1,
@@ -56,6 +133,17 @@ const LandingBio = () => {
             <Content>
               <NameHeader>{data.site.siteMetadata.title}</NameHeader>
               <Description>{data.site.siteMetadata.subtitle}</Description>
+              <FeaturedLabel>Recent work</FeaturedLabel>
+              <FeaturedList>
+                {featuredProjects.map(project => (
+                  <FeaturedItem key={project.name}>
+                    <FeaturedLink href={project.href} target="_blank" rel="noreferrer">
+                      {project.name}
+                    </FeaturedLink>
+                    <FeaturedDescription>{project.description}</FeaturedDescription>
+                  </FeaturedItem>
+                ))}
+              </FeaturedList>
             </Content>
           </animated.div>
         </OuterContainer>

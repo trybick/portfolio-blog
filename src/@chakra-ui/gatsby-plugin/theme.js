@@ -12,6 +12,9 @@ const styles = {
     body: {
       fontFamily: `'Nunito', sans-serif`,
       backgroundColor: colors.background,
+      backgroundImage: `radial-gradient(60% 45% at 50% 0%, rgba(0, 150, 199, 0.09), transparent 70%)`,
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
       color: colors.primary,
     },
 
