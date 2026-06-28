@@ -17,6 +17,37 @@ const PageTitle = styled.h1`
   font-size: 2.5rem;
 `;
 
+const Bio = styled.div`
+  margin-top: 1.5rem;
+
+  p {
+    margin-top: 0;
+  }
+
+  ::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+`;
+
+const HeadshotImage = styled.img`
+  float: right;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  margin: 0 0 1rem 2rem;
+  shape-outside: circle();
+
+  @media (max-width: 600px) {
+    float: none;
+    display: block;
+    margin: 0 auto 1.25rem;
+  }
+`;
+
 const AboutPage = () => {
   return (
     <Layout>
@@ -25,15 +56,18 @@ const AboutPage = () => {
         <PageTitle>About</PageTitle>
         <ViewResumeButton />
 
-        <p>
-          I genuinely enjoy building and obsessing over software that feels great to use. I didn’t start coding until later in life, but once I discovered it, it really clicked. I approach engineering with a growth mindset, first-principles thinking, and a constant question: “How will the user feel in this scenario?”
-        </p>
-        <p>
-          I’m always in search of new things to learn although usually my tools of choice have been React and TypeScript because of their power and versatility. I've used these to build web, mobile, and desktop applications.
-        </p>
-        <p>
-          At the end of the day, I’m driven by curiosity and the simple joy of turning problems into products people enjoy using.
-        </p>
+        <Bio>
+          <HeadshotImage src="/me headshot.png" alt="Tim R" />
+          <p>
+            I genuinely enjoy building and obsessing over software that feels great to use. I didn&apos;t start coding until later in life, but once I discovered it, it really clicked. I approach engineering with a growth mindset, first-principles thinking, and a constant question: &ldquo;How will the user feel in this scenario?&rdquo;
+          </p>
+          <p>
+            I&apos;m always in search of new things to learn although usually my tools of choice have been React and TypeScript because of their power and versatility. I&apos;ve used these to build web, mobile, and desktop applications.
+          </p>
+          <p>
+            At the end of the day, I&apos;m driven by curiosity and the simple joy of turning problems into products people enjoy using.
+          </p>
+        </Bio>
 
         <FavoritesAccordion />
       </Content>
