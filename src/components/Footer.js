@@ -1,79 +1,47 @@
 import React from 'react';
 import styled from '@emotion/styled';
-// import { Box } from '@chakra-ui/react';
-// import { DiReact } from 'react-icons/di';
+import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaFileLines } from 'react-icons/fa6';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
 import { resumeHref } from './ViewResumeButton';
 
+const socialLinks = [
+  { label: 'GitHub', href: 'https://github.com/trybick', Icon: FaGithub, size: 22 },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/tim-rybicki/', Icon: FaLinkedin, size: 22 },
+  { label: 'YouTube', href: 'https://www.youtube.com/celtic426', Icon: FaYoutube, size: 22 },
+  { label: 'Resume', href: resumeHref, Icon: FaFileLines, size: 19 },
+];
+
 const FooterContainer = styled.footer`
-  padding: 0 0 16px;
-  font-size: 1.2rem;
+  padding: 0 0 24px;
 `;
 
-const FooterRow = styled.div`
+const IconRow = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
 `;
 
-const TopRow = styled(FooterRow)`
-  margin-bottom: 16px;
-`;
+const IconLink = styled.a`
+  display: inline-flex;
+  color: ${theme.colors.gray} !important;
+  transition: color 0.2s ease;
 
-const ContactLink = styled.a`
-  color: black;
-  margin-left: 15px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-
-  ::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: ${theme.colors.highlight};
-    transform-origin: bottom right;
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-
-  :hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  &:hover {
+    color: ${theme.colors.highlight} !important;
   }
 `;
-
-const FirstContactLink = styled(ContactLink)`
-  margin-left: 0;
-`;
-
-// const CityContainer = styled.span`
-//   margin-left: 0.8px;
-// `;
 
 const Footer = () => (
   <FooterContainer>
-    <TopRow>
-      <FirstContactLink href="https://github.com/trybick" target="_blank" rel="noreferrer">
-        GitHub
-      </FirstContactLink>
-      <ContactLink href={resumeHref} target="_blank" rel="noreferrer">
-        Resume
-      </ContactLink>
-      <ContactLink href="https://www.linkedin.com/in/tim-rybicki/" target="_blank" rel="noreferrer">
-        LinkedIn
-      </ContactLink>
-      <ContactLink href="https://www.youtube.com/celtic426" target="_blank" rel="noreferrer">
-        YouTube
-      </ContactLink>
-    </TopRow>
-
-    {/* <FooterRow>
-      <Box as={DiReact} w="24.5px" verticalAlign="middle" />
-      <CityContainer>Boston {new Date().getFullYear()}</CityContainer>
-    </FooterRow> */}
+    <IconRow>
+      {socialLinks.map(({ label, href, Icon, size }) => (
+        <IconLink key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}>
+          <Icon size={size} />
+        </IconLink>
+      ))}
+    </IconRow>
   </FooterContainer>
 );
 
