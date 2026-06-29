@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { FaFileLines } from 'react-icons/fa6';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
 import { resumeHref } from './ViewResumeButton';
@@ -10,6 +10,7 @@ const socialLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/tim-rybicki/', Icon: FaLinkedin, size: 22 },
   { label: 'YouTube', href: 'https://www.youtube.com/celtic426', Icon: FaYoutube, size: 22 },
   { label: 'Resume', href: resumeHref, Icon: FaFileLines, size: 19 },
+  { label: 'Email', href: 'mailto:devtimr@gmail.com', Icon: FaEnvelope, size: 22 },
 ];
 
 const FooterContainer = styled.footer`
