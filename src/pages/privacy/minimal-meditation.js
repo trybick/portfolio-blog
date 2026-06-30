@@ -13,7 +13,7 @@ const PageTitle = styled.h1`
   margin-bottom: 24px;
 `;
 
-const MinimalMeditationPrviacyPage = () => {
+const MinimalMeditationPrivacyPage = () => {
   return (
     <Layout>
       <SEO title="Minimal Meditation Privacy Policy" />
@@ -177,4 +177,4 @@ const MinimalMeditationPrviacyPage = () => {
   );
 };
 
-export default MinimalMeditationPrviacyPage;
+export default MinimalMeditationPrivacyPage;

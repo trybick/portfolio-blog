@@ -13,7 +13,7 @@ const PageTitle = styled.h1`
   margin-bottom: 24px;
 `;
 
-const ChineseFlipPrviacyPage = () => {
+const ChineseFlipPrivacyPage = () => {
   return (
     <Layout>
       <SEO title="Chinese Flip Privacy Policy" />
@@ -177,4 +177,4 @@ const ChineseFlipPrviacyPage = () => {
   );
 };
 
-export default ChineseFlipPrviacyPage;
+export default ChineseFlipPrivacyPage;
