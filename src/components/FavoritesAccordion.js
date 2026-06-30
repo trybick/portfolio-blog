@@ -68,7 +68,7 @@ const FavoritesAccordion = () => (
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pb={0} pt={2} pl={0}>
-              <List spacing={2} alignItems="center" id="lllll">
+              <List spacing={2} alignItems="center">
                 {category.items.map(item => (
                   <ListItem key={item.name} fontSize="1rem">
                     <ListIcon as={MdArrowForward} w="1rem" verticalAlign="sub" />

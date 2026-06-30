@@ -155,7 +155,7 @@ const MinimalMeditationPrviacyPage = () => {
           </p>
           <p>
             If you have any questions or suggestions about my Privacy Policy, do not hesitate to
-            contact me at t.rybicki@gmail.com.
+            contact me at devtimr@gmail.com.
           </p>
           <p>
             This privacy policy page was created at{' '}

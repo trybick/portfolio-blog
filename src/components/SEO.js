@@ -31,9 +31,7 @@ function SEO({ description, title }) {
       htmlAttributes={{
         lang: 'en',
       }}
-      title={title}
-      titleTemplate={`%s | ${SITE_NAME}`}
-      defaultTitle={SITE_NAME}
+      title={pageTitle}
       meta={[
         {
           name: `keywords`,
