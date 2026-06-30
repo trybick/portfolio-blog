@@ -11,7 +11,7 @@ const styles = {
   global: {
     body: {
       fontFamily: `'Nunito', sans-serif`,
-      background: `radial-gradient(70% 50% at 50% 0%, rgba(0, 150, 199, 0.17), transparent 70%), ${colors.background}`,
+      background: `radial-gradient(70% 50% at 50% 0%, rgba(0, 150, 199, 0.08), transparent 70%), ${colors.background}`,
       color: colors.primary,
     },
 

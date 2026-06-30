@@ -22,7 +22,7 @@ function SEO({ description, title }) {
   `);
 
   const metaDescription = description || site.siteMetadata.description;
-  const staticImage = 'https://timr.dev/screenshot-portfolio.png';
+  const staticImage = 'https://timr.dev/og-image.png';
   const pageUrl = `${SITE_URL}${pathname}`;
   const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
 

@@ -4,7 +4,8 @@ module.exports = {
     subtitle: `passionate about code and UX`,
     description: `View my latest projects and blog posts centering around web development`,
     author: `Tim Rybicki`,
-    image: 'screenshot-portfolio.png',
+    image: 'og-image.png',
+    siteUrl: 'https://timr.dev',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -87,6 +88,20 @@ module.exports = {
         stages: ['develop'],
         extensions: ['js', 'jsx'],
         exclude: ['node_modules', 'bower_components', '.cache', 'public'],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        output: '/',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://timr.dev',
+        sitemap: 'https://timr.dev/sitemap-index.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
   ],
