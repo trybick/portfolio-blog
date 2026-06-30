@@ -4,6 +4,8 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ViewResumeButton from '../components/ViewResumeButton';
 import FavoritesAccordion from '../components/FavoritesAccordion';
+import theme from '../@chakra-ui/gatsby-plugin/theme';
+
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
@@ -44,10 +46,16 @@ const HeadshotImage = styled.img`
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 4px solid ${theme.colors.highlight};
   object-fit: cover;
   object-position: center top;
   margin-bottom: 1rem;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35), 0 0 22px 6px rgba(0, 150, 199, 0.65);
+  }
 
   @media (max-width: 860px) {
     width: 160px;
