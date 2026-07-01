@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import { useLocation } from '@reach/router';
 
-const SITE_URL = 'https://timr.dev';
-const SITE_NAME = 'Tim Rybicki';
+const OG_IMAGE_WIDTH = 1200;
+const OG_IMAGE_HEIGHT = 630;
 
 function SEO({ description, title }) {
   const { pathname } = useLocation();
@@ -15,16 +15,26 @@ function SEO({ description, title }) {
           description
           author
           title
+          seoTitle
+          siteName
           image
+          imageAlt
+          siteUrl
         }
       }
     }
   `);
 
-  const metaDescription = description || site.siteMetadata.description;
-  const staticImage = 'https://timr.dev/og-image.png';
-  const pageUrl = `${SITE_URL}${pathname}`;
-  const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+  const { siteMetadata } = site;
+  const metaDescription = description || siteMetadata.description;
+  const ogImage = `${siteMetadata.siteUrl}/${siteMetadata.image}`;
+  const pageUrl = `${siteMetadata.siteUrl}${pathname}`;
+  const isHomePage = pathname === '/' || pathname === '';
+  const pageTitle = isHomePage
+    ? siteMetadata.seoTitle
+    : title
+      ? `${title} | ${siteMetadata.siteName}`
+      : siteMetadata.siteName;
 
   return (
     <Helmet
@@ -33,6 +43,10 @@ function SEO({ description, title }) {
       }}
       title={pageTitle}
       meta={[
+        {
+          name: `description`,
+          content: metaDescription,
+        },
         {
           name: `keywords`,
           content: 'tim rybicki, software developer, portfolio, blog',
@@ -47,7 +61,11 @@ function SEO({ description, title }) {
         },
         {
           itemprop: `image`,
-          content: staticImage,
+          content: ogImage,
+        },
+        {
+          property: `og:site_name`,
+          content: siteMetadata.siteName,
         },
         {
           property: `og:url`,
@@ -67,7 +85,19 @@ function SEO({ description, title }) {
         },
         {
           property: `og:image`,
-          content: staticImage,
+          content: ogImage,
+        },
+        {
+          property: `og:image:alt`,
+          content: siteMetadata.imageAlt,
+        },
+        {
+          property: `og:image:width`,
+          content: String(OG_IMAGE_WIDTH),
+        },
+        {
+          property: `og:image:height`,
+          content: String(OG_IMAGE_HEIGHT),
         },
         {
           name: `twitter:card`,
@@ -83,7 +113,11 @@ function SEO({ description, title }) {
         },
         {
           name: `twitter:image`,
-          content: staticImage,
+          content: ogImage,
+        },
+        {
+          name: `twitter:image:alt`,
+          content: siteMetadata.imageAlt,
         },
       ]}
     ></Helmet>

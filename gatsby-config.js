@@ -2,9 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `Tim Rybicki`,
     subtitle: `passionate about code and UX`,
-    description: `View my latest projects and blog posts centering around web development`,
+    seoTitle: `Tim Rybicki — Software Developer Portfolio & Blog`,
+    description: `Explore projects and articles by Tim Rybicki, a software developer passionate about code, UX, and building useful products like TV Minder and Terminal Zoom.`,
     author: `Tim Rybicki`,
+    siteName: `Tim Rybicki`,
     image: 'og-image.png',
+    imageAlt: `Tim Rybicki — passionate about code and UX. View portfolio at timr.dev`,
     siteUrl: 'https://timr.dev',
   },
   plugins: [
@@ -25,6 +28,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     {
       resolve: '@chakra-ui/gatsby-plugin',
