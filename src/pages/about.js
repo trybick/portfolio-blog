@@ -21,7 +21,7 @@ const PageTitle = styled.h1`
 
 const TopSection = styled.div`
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
   margin-top: 1.5rem;
 
@@ -35,6 +35,7 @@ const SideColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   flex-shrink: 0;
 
@@ -42,11 +43,15 @@ const SideColumn = styled.div`
     margin: 0;
     text-align: center;
   }
+
+  @media (max-width: 600px) {
+    justify-content: flex-start;
+  }
 `;
 
 const HeadshotWrapper = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   border: 4px solid ${theme.colors.highlight};
   overflow: hidden;
@@ -63,8 +68,8 @@ const HeadshotWrapper = styled.div`
   }
 
   @media (max-width: 860px) {
-    width: 160px;
-    height: 160px;
+    width: 170px;
+    height: 170px;
   }
 
   @media (max-width: 600px) {
