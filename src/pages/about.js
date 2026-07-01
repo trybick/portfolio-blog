@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ViewResumeButton from '../components/ViewResumeButton';
@@ -34,6 +35,7 @@ const SideColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
   flex-shrink: 0;
 
   > div {
@@ -42,16 +44,19 @@ const SideColumn = styled.div`
   }
 `;
 
-const HeadshotImage = styled.img`
+const HeadshotWrapper = styled.div`
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 4px solid ${theme.colors.highlight};
-  object-fit: cover;
-  object-position: center top;
-  margin-bottom: 1rem;
+  overflow: hidden;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
   transition: box-shadow 0.3s ease;
+
+  .gatsby-image-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
 
   &:hover {
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35), 0 0 22px 6px rgba(0, 150, 199, 0.65);
@@ -91,7 +96,17 @@ const AboutPage = () => {
 
         <TopSection>
           <SideColumn>
-            <HeadshotImage src="/me headshot.png" alt="Tim R" />
+            <HeadshotWrapper>
+              <StaticImage
+                src="../images/me-headshot.png"
+                alt="Tim R"
+                width={400}
+                height={400}
+                placeholder="blurred"
+                formats={['auto', 'webp', 'avif']}
+                imgStyle={{ objectFit: 'cover', objectPosition: 'center top' }}
+              />
+            </HeadshotWrapper>
             <ViewResumeButton />
           </SideColumn>
           <IntroText>
