@@ -1,7 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
-import { animated, useSpring } from 'react-spring';
 import { colors } from '../@chakra-ui/gatsby-plugin/theme';
 
 const featuredProjects = [
@@ -26,6 +25,21 @@ const OuterContainer = styled.div`
 
   @media (max-width: 767px) {
     height: 72vh;
+  }
+`;
+
+const AnimatedContent = styled.div`
+  animation: fadeInUp 1000ms linear forwards;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `;
 
@@ -116,52 +130,43 @@ const FeaturedItem = styled.a`
   }
 `;
 
-const LandingBio = () => {
-  const transitionConfig = useSpring({
-    opacity: 1,
-    config: { duration: 1000 },
-    transform: 'translate(0px, 0px)',
-    from: { opacity: 0, transform: 'translate(0px, -25px)' },
-  });
-
-  return (
-    <StaticQuery
-      query={graphql`
-        query LandingSiteTitleQuery {
-          site {
-            siteMetadata {
-              title
-              subtitle
-            }
+const LandingBio = () => (
+  <StaticQuery
+    query={graphql`
+      query LandingSiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+            subtitle
           }
         }
-      `}
-      render={data => (
-        <OuterContainer>
-          <animated.div style={transitionConfig}>
-            <Content>
-              <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-              <Description>{data.site.siteMetadata.subtitle}</Description>
-              <FeaturedLabel>Recent work</FeaturedLabel>
-              <FeaturedList>
-                {featuredProjects.map(project => (
-                  <FeaturedItem
-                    key={project.name}
-                    href={project.href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FeaturedName>{project.name}</FeaturedName>
-                    <FeaturedDescription>{project.description}</FeaturedDescription>
-                  </FeaturedItem>
-                ))}
-              </FeaturedList>
-            </Content>
-          </animated.div>
-        </OuterContainer>
-      )}
-    />
-  );
-};
+      }
+    `}
+    render={data => (
+      <OuterContainer>
+        <AnimatedContent>
+          <Content>
+            <NameHeader>{data.site.siteMetadata.title}</NameHeader>
+            <Description>{data.site.siteMetadata.subtitle}</Description>
+            <FeaturedLabel>Recent work</FeaturedLabel>
+            <FeaturedList>
+              {featuredProjects.map(project => (
+                <FeaturedItem
+                  key={project.name}
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FeaturedName>{project.name}</FeaturedName>
+                  <FeaturedDescription>{project.description}</FeaturedDescription>
+                </FeaturedItem>
+              ))}
+            </FeaturedList>
+          </Content>
+        </AnimatedContent>
+      </OuterContainer>
+    )}
+  />
+);
 
 export default LandingBio;
