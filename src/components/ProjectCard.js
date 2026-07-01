@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Box, Popover, PopoverTrigger, PopoverContent, Link, PopoverArrow } from '@chakra-ui/react';
+import { Link } from '@chakra-ui/react';
 import { FaGithub, FaGlobeAmericas } from 'react-icons/fa';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
+import Tooltip from './Tooltip';
 
 const Card = styled.div`
   border-radius: 5px;
@@ -40,7 +41,7 @@ const Icons = styled.div`
     margin-left: 8px;
 
     :hover {
-      color: grey;
+      color: ${theme.colors.highlight} !important;
     }
   }
 `;
@@ -52,29 +53,12 @@ const Description = styled.p`
   color: ${theme.colors.primary};
 `;
 
-const IconWithPopover = ({ icon, link, iconText, popoverWidth }) => (
-  <Popover trigger="hover" placement="top">
-    <PopoverTrigger>
-      <a href={link} target="_blank" rel="noreferrer" aria-label={iconText}>
-        {icon}
-      </a>
-    </PopoverTrigger>
-
-    <PopoverContent
-      backgroundColor={theme.colors.primary}
-      border="0"
-      color={theme.colors.background}
-      fontSize="14px"
-      fontWeight="bold"
-      height="30px"
-      paddingX="6px"
-      width={popoverWidth}
-      zIndex={4}
-    >
-      <PopoverArrow backgroundColor={theme.colors.primary} />
-      <Box p={1}>{iconText}</Box>
-    </PopoverContent>
-  </Popover>
+const IconWithTooltip = ({ icon, link, iconText }) => (
+  <Tooltip label={iconText}>
+    <a href={link} target="_blank" rel="noreferrer" aria-label={iconText}>
+      {icon}
+    </a>
+  </Tooltip>
 );
 
 const ProjectCard = ({ project: { name, description, githubLink, liveLink } }) => (
@@ -84,18 +68,8 @@ const ProjectCard = ({ project: { name, description, githubLink, liveLink } }) =
         {name}
       </Title>
       <Icons>
-        <IconWithPopover
-          icon={<FaGlobeAmericas w="1.05rem" />}
-          iconText="View Project"
-          link={liveLink}
-          popoverWidth="103px"
-        />
-        <IconWithPopover
-          icon={<FaGithub w="1.05rem" />}
-          iconText="View Code"
-          link={githubLink}
-          popoverWidth="91px"
-        />
+        <IconWithTooltip icon={<FaGlobeAmericas w="1.05rem" />} iconText="View Project" link={liveLink} />
+        <IconWithTooltip icon={<FaGithub w="1.05rem" />} iconText="View Code" link={githubLink} />
       </Icons>
     </TopRow>
 

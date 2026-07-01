@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from '@emotion/styled';
-import { Tooltip } from '@chakra-ui/react';
 import { FaCheck, FaEnvelope, FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { FaFileLines } from 'react-icons/fa6';
 import theme from '../@chakra-ui/gatsby-plugin/theme';
+import Tooltip from './Tooltip';
 import { resumeHref } from './ViewResumeButton';
 
 const emailAddress = 'devtimr@gmail.com';
@@ -91,13 +91,7 @@ const Footer = () => {
           const isCopied = copiedLabel === label;
 
           return (
-            <Tooltip
-              key={label}
-              label={isCopied ? 'Copied!' : tooltip}
-              hasArrow
-              openDelay={100}
-              isOpen={isCopied || undefined}
-            >
+            <Tooltip key={label} label={isCopied ? 'Copied!' : tooltip} isOpen={isCopied || undefined}>
               {copyEmail ? (
                 <IconButton
                   type="button"
