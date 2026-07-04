@@ -22,9 +22,12 @@ const OuterContainer = styled.div`
   justify-content: center;
   flex-direction: row;
   height: 77vh;
+  height: 77dvh;
 
   @media (max-width: 767px) {
     height: 72vh;
+    height: 72dvh;
+    padding: 0 1.5rem;
   }
 `;
 
@@ -127,6 +130,7 @@ const FeaturedItem = styled.a`
   @media (max-width: 767px) {
     grid-template-columns: 115px 1fr;
     column-gap: 12px;
+    margin: 0;
   }
 `;
 
