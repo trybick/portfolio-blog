@@ -3,16 +3,16 @@ export default [
     category: 'Web',
     projects: [
       {
+        name: 'Delta Resume',
+        description: 'AI-powered resume optimization',
+        liveLink: 'https://deltaresume.com/',
+        githubLink: 'https://github.com/trybick/delta-resume',
+      },
+      {
         name: 'TV Minder',
         description: 'Track all your favorite TV shows on one calendar',
         liveLink: 'https://tv-minder.com/',
         githubLink: 'https://github.com/trybick/tv-minder',
-      },
-      {
-        name: 'Issue Collab',
-        description: `A more effective way to search issues on GitHub`,
-        liveLink: 'https://issue-collab.netlify.app',
-        githubLink: 'https://github.com/trybick/issue-collab',
       },
     ],
   },

@@ -5,6 +5,11 @@ import { colors } from '../@chakra-ui/gatsby-plugin/theme';
 
 const featuredProjects = [
   {
+    name: 'Delta Resume',
+    description: 'AI-powered resume optimization',
+    href: 'https://deltaresume.com/',
+  },
+  {
     name: 'TV Minder',
     description: 'Track your shows on one calendar',
     href: 'https://tv-minder.com/',
