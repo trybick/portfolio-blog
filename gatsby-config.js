@@ -80,8 +80,8 @@ module.exports = {
         name: `Tim Rybicki's portfolio`,
         short_name: `portfolio-blog`,
         start_url: `/`,
-        background_color: '#0A1128',
-        theme_color: '#f5f5f5',
+        background_color: '#171923',
+        theme_color: '#171923',
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
